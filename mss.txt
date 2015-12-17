@@ -1,0 +1,77 @@
+#Document Commands
+!PRODUCT,MSS
+!VERSION,0.00.00
+!DOC_TYPE,Operator's Manual
+!OUT_DIR,mss/
+!INCLUDED_PAGES,
+!VALID_TEXT,
+!TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm
+
+#Documentation Generation
+!INCLUDE,required/intro_qs_.txt,1
+!INCLUDE,required/overview_qs_.txt,1
+
+*,Equipment Guide,,equipment_guide.htm,,,
+**,ROV,,mss_rov.htm,,,
+**,Integrated Accessories,,mss_accessories.htm,,,
+**,Control Panel,,mss_control_panel.htm,,,
+**,Hand Controller,,mss_controller.htm,,,
+**,Tether,,mss_tether.htm,,,
+
+*,Software Guide,,software_guide.htm,,,
+**,Interface Overview,,.htm,,,
+***,Video Window,,video_window.htm,,,
+****,Video Text Overlay,,video_overlay.htm,,,
+***,Instruments,,instruments.htm,,,
+****,System Health,,instrument_health.htm,,,
+****,Main Camera,,instrument_camera.htm,,,
+****,Lights,,instrument_lights.htm,,,
+****,Attitude,,instrument_attitude.htm,,,
+****,Depth,,instrument_depth.htm,,,
+****,Water Temperature,,instrument_water_temperature.htm,,,
+****,Joystick Feedback,,instrument_joystick.htm,,,
+
+**,Vehicle Control,,_control_vehicle.htm,,,
+***,Flight Control,,control_flight.htm,,,
+****,Open Loop Control,,control_open_loop.htm,,,
+****,Auto Modes,,control_auto.htm,,,
+*****,Auto Heading,,control_auto_heading.htm,,,
+*****,Auto Depth,,control_auto_depth.htm,,,
+*****,Auto Pitch,,control_auto_pitch.htm,,,
+***,Camera Control,,control_camera.htm,,,
+***,Lights Control,,control_lights.htm,,,
+
+**,Imagery,,imagery.htm,,,
+***,Recording,,recording.htm,,,
+****,Recording Formats,,recording_formats.htm,,,
+
+**,Status &amp; Alarms,,status_alarms.htm,,,
+***,Power Management Alarm,,alarm_power.htm,,,
+***,Thruster Alarm,,alarm_thruster.htm,,,
+***,Lights Alarm,,alarm_lights.htm,,,
+
+**,Configuration,,configuration.htm,,,
+***,Controller Mapping,,controller_mapping.htm,,,
+***,Power Management,,power_management.htm,,,
+
+v**,Software Management,,software_mgmt.htm,,,
+v***,Software Installation,,install.htm,,,
+v***,Software Updates,,updates.htm,,,
+v***,Folder Structure,,folder_structure.htm,,,
+
+*,Operations Guide,,operations_guide.htm,,,
+
+*,Maintenance Guide,,maintenance_guide.htm,,,
+
+*,Component Modules Guide,,components_guide.htm,,,
+**,M5 Communications Module,comms_overview_.htm,m5_communications/htm/overview_.htm,,,
+#!INCLUDE,m5_communications/core.txt,3
+**,M5 IMU Module,imu_overview_.htm,m5_imu/htm/overview_.htm,,,
+#!INCLUDE,m5_imu/core.txt,3
+**,M5 LED Light Module,led_light_overview_.htm,m5_led_light/htm/overview_.htm,,,
+#!INCLUDE,m5_led_light/core.txt,3
+**,M5 Power Module,power_overview_.htm,m5_power/htm/overview_.htm,,,
+#!INCLUDE,m5_power/core.txt,3
+**,M5 Thruster Module,thruster_overview_.htm,m5_thruster/htm/overview_.htm,,,
+#!INCLUDE,m5_thruster/core.txt,3
+#!INCLUDE,library/regional.txt,1
