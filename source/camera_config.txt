@@ -1,0 +1,38 @@
+Modify a camera:
+
+Open terminal window
+
+cd Alpha/flighthack
+
+./vr_create_virtport_all.sh &
+
+ls
+   check for vrport1 - vrport6
+
+vr_enum -c vrport2
+   or use vrport4 for a rear camera
+
+Find Serial Number
+
+vr_setid SN NID GID
+   SN is serial number
+   NID is 4 for front camera, 12 for rear camera
+   GID is 196
+
+Close terminal window
+
+Open Browser
+
+Navigate to 192.168,1 11 (for front camera, 192.168.1.12 for rear)
+
+Select Network
+
+Set IP as desired (192.168.1.11 or 192.168.1.12)
+
+Close and reopen browser
+
+Navigate to 192.168,1 11 (for front camera, 192.168.1.12 for rear)
+
+Select Stream A Control
+
+Make sure startup streaming is set to "On" for a front camera and "Off" for a rear camera.

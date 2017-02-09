@@ -1,0 +1,9 @@
+
+closex,Manipulator Close
+openx,Manipulator Open
+help,Manipulator Rotate
+camera,Cycle Display
+closex_image,closex
+openx_image,openx
+camera_image,help
+help_image,reserved_1

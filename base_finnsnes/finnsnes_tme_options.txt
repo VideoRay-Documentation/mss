@@ -1,0 +1,2 @@
+**,Tether Management Equipment,,nul,,,
+*,Electro-Mechanical Winch,winch.html,mss/base_finnsnes/htm/winch.htm,,,

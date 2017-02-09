@@ -1,0 +1,33 @@
+
+joystick,Horizontal Control
+depth,Depth Control
+up,Tilt Up
+down,Tilt Down
+inx,Focus In
+out,Focus Out
+bright,Lights On
+dim,Lights Intensity
+snapshot,Snapshot
+record,Video Record
+closex,Reserved
+openx,Reserved
+help,Reserved
+camera,Reserved
+reserved_1,Reserved
+reserved_2,Reserved
+joystick_image,joystick
+depth_image,depth
+up_image,up
+down_image,down
+inx_image,inx
+out_image,out
+bright_image,bright
+dim_image,reserved_2
+snapshot_image,snapshot
+record_image,record
+closex_image,closex
+openx_image,openx
+help_image,help
+camera_image,camera
+reserved_1_image,reserved_1
+reserved_2_image,dim

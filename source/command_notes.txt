@@ -1,0 +1,156 @@
+#find all socats
+ps -aux | grep socat
+
+#find all pythons running
+ps -aux | grep python
+
+#use kill -9  to kill process id'd reported above
+
+#install modified pygame (assuming in flighthack dir)
+cd ~/Caviblaster/flighthack/pygame-pygame-d61ea8eabd56/
+sudo python setup.py 
+
+
+#!!
+#how to vr_debug to camera
+#!!
+#create virt ports
+./vr_create_virtport_all.sh &
+#see if you can see the camera
+vr_enum -c vrport1
+#debug connect to camera
+./vr_debug_putty.py -c vrport1 4
+#kill socat virtports
+killall socat
+
+
+#!!!
+#example refresh commands (led, thrusters, and power module can use /dev/ttyUSB0
+#note block size is the same (16384) for all modules except LED and THRUSTER
+#firmware versions are just for example purposes
+vr_refresh -i 5 ~/firmware/motor_controller-1.0.3.hex
+vr_refresh -i 11 ~/firmware/led_controller-0.9.5.hex
+vr_refresh -i 1 ~/firmware/power_converter-1.1.3.hex --block_size 16384
+vr_refresh -i 2 ~/firmware/comms_hub-0.5.0.hex --block_size 16384
+#!!!
+
+#!!!
+#example refresh commands through virtports
+#camera and IMU need to go through virt ports
+#It's easier to run in 2 terminals.  Close both terminals when done:
+#NOTE: BOTH TERMINALS NEED TO BE IN THE SAME DIRECTORY SINCE THAT IS WHERE vrports are made
+#In terminal 1:
+./vr_create_virtport_all.sh 
+
+#In terminal 2:
+vr_refresh -i 3 -c vrport3 ~/firmware/attitude_sensor-0.5.1.hex  --block_size 16384
+
+
+#to run in just one terminal
+./vr_create_virtport_all.sh &
+vr_refresh -i 4 -c vrport1 ~/firmware/camera_adapter-0.3.4.hex  --block_size 16384
+vr_refresh -i 3 -c vrport3 ~/firmware/attitude_sensor-0.5.1.hex  --block_size 16384
+
+#!!!
+
+
+#list nodes (default port is ttyUSB0)
+vr_enum 
+
+
+#get xcopy topside software
+wget ftp://ftp.videoray.com/xcopy/flighthack.tgz --user=quarterdeck --password=quarterdeck
+
+#auto get new topside code:
+vr_refresh_surface.sh
+
+
+#!!!
+#test depth
+socat - TCP:192.168.1.65:7445
+#test imu
+socat - TCP:192.168.1.65:7444
+#!!!
+
+#run vr_enage with logging
+./vr_engage.py | tee log.txt
+
+
+#you can use vr_refresh to reboot a node (node id 13 here)
+vr_refresh -r -i 13
+
+#chmod will change file permissions, 
+#the following example sets exe bit for all .py and .sh files
+chmod a+x *.py *.sh
+
+
+
+
+#!!!
+#!!!
+#!!!
+#!!!#most py commahnd have -h help.
+#most compiled commands have -? help
+#sh commands dont, but you can always cat since they are short.
+
+# make all comms hub virt ports (vrport# (1-6))
+vr_create_virtport_all.sh  
+
+#make virt port to power module
+vr_create_virtport_main.sh  
+
+#start mjpeg gstreamer viewer
+vr_live_video_mjpeg.sh  
+
+#start 264 gstreamer viewer
+vr_live_video.sh  
+
+#start mjpeg gstreamer viewer and record
+vr_record_video_mjpeg.sh  
+
+#start 264 gstreamer viewer and record
+vr_record_video.sh  
+
+#pull new topside code and copy over everything
+vr_refresh_surface.sh
+
+#initialize camera settings
+vr_camera_init.py    
+
+#start rotating manip
+vr_engage_manip_rotating.py      
+
+#check camera comms and internal pressure and temp
+vr_test_camera.py
+
+#set ahrs mode to heavy mag dep and other std settings
+vr_ahrs_config_filter.py    
+
+#enter diagnostic mode and pop a putty terminal, pass in node ID
+vr_debug_putty.py 2   
+
+#main flight app
+vr_engage.py    
+
+#pause camera streaming
+vr_stop_camera_streams.py  
+
+#adjust ahrs rotation (pass in rotation angles, Pitch Roll Yaw)
+vr_ahrs_config_rotation.py  0 0 90
+
+#main camera control app
+vr_engage_camera.py  
+
+#flight app with hack to use thruster as a rotating brush
+vr_engage_with_rotating_tool.py  
+
+#outpu ahrs data and depth
+vr_test_ahrs.py            
+
+#test thrusters directly (pass in responding node ID with -r and then bare params or setting for which motor ID)
+vr_thruster_test.py -r 5 0 0 0 1 0 
+
+#!!!
+#!!!
+#!!!
+#!!!

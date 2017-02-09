@@ -1,0 +1,2 @@
+v*,Rotating Manipulator,NUL,../../rotating_manipulator,,,
+v*,Tritech Micron Sonar,,tritech_micron.htm,,,

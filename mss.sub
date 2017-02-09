@@ -1,0 +1,12 @@
+mss_name,MSS
+mss_doc_version,1.00.00
+mss_html_version,
+
+arrangement_frame,mss/htm/arrangement_frame.htm
+arrangement_buoyancy,mss/htm/arrangement_buoyancy.htm
+arrangement_power,mss/htm/arrangement_power.htm
+arrangement_communications,mss/htm/arrangement_communications.htm
+arrangement_ahrsd,mss/htm/arrangement_ahrsd.htm
+arrangement_thrusters,mss/htm/arrangement_thrusters.htm
+arrangement_cameras,mss/htm/arrangement_cameras.htm
+arrangement_lights,mss/htm/arrangement_lights.htm
