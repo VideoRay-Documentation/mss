@@ -1,0 +1,21 @@
+<h1>Module Configuration</h1>
+
+<p>The modular concept requires that modules be configured prior to installation or replacement in a specific vehicle arrangement.</p>
+
+<p><img src="../../required/images/icon_note.png"> Configuration information is specific to each vehicle.  Information about the configuration for a specific vehicle can be found in the <a href="../../<!--i-->$$htmlDir<!--/i-->equip_rov.html">Submersible</a> section of the <a href="../../<!--i-->$$htmlDir<!--/i-->equip_.html">Equipment Guide</a>.</p>
+
+<h2>Conceptual Overview</h2>
+
+<p>Thrusters and other modules can be thought of as employees and the vehicle as the jobsite.  Each employee (Module) has a name (Serial Number stamped or printed on the module and coded in the firmware).  When the employee goes to work at the jobsite (is installed on the vehicle), it is also assigned an employee number (Node ID) by management (person doing the configuration).  Work instructions are announced to all employees at the same time, so each employee must listen for their specific instructions and ignore the instructions for other employees.  In order to accomplish this, employees can be assigned a specific work task (Application ID or Motor ID).  The employee will only listen for instructions related to their work task.  For example, a vertical thruster will only actuate when the depth control is engaged.</p>
+
+<h3>General Requirements</h3>
+
+<ol>
+  <li>Each employee (Module) must have a unique name (Serial Number).</li>
+  <li>Each employee (Module) must have a unique employee number (Node ID) at a jobsite (vehicle).</li>
+  <li>Some employee (Modules) may be assigned specific work tasks (Application ID or Motor ID).  Examples include Forward Starboard Thruster or Port-side LED.</li>
+  <li>At a specific jobsite (Vehicle) more than one employee (Module) may be assigned the same work task (Application ID or Motor ID).  This will allow for vehicle configurations that include multiple vertical motors to increase the total lift capacity.</li>
+  <li>Modules have additional parameters that can be configured that can affect their performance.</li>
+  </ol>
+
+<p>The following sections provide information about module replacement.</p>

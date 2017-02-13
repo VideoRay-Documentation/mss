@@ -122,7 +122,8 @@ v****,Updating Firmware,,updating_firmware.htm,,,
 
 v*,Maintenance Guide,,maintenance_guide.htm,,,
 v**,Diagnostics,,diagnostics.htm,,,
-v**,Thruster Replacement,,replacement_thruster.htm,,,
+v**,Module Configuration,,module_configuration.htm,,,
+v***,Thruster Replacement,,replacement_thruster.htm,,,
 
 #*,Component Modules Guide,,components_guide.htm,,,
 #**,M5 Communications Module,comms_overview_.html,m5_communications/htm/overview_.htm,,,
