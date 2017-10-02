@@ -1,0 +1,16 @@
+mss_name,??? MSS
+mss_doc_version,1.00.00
+mss_html_version,???
+config_name,???
+
+options_rov,mss/base_???/options_rov.txt
+options_tme,mss/base_???/options_tme.txt
+
+arrangement_frame,mss/base_???/htm/arrangement_frame.htm
+arrangement_buoyancy,mss/base_???/htm/arrangement_buoyancy.htm
+arrangement_power,mss/base_???/htm/arrangement_power.htm
+arrangement_communications,mss/base_???/htm/arrangement_communications.htm
+arrangement_ahrsd,mss/base_???/htm/arrangement_ahrsd.htm
+arrangement_thrusters,mss/base_???/htm/arrangement_thrusters.htm
+arrangement_cameras,mss/base_???/htm/arrangement_cameras.htm
+arrangement_lights,mss/base_???/htm/arrangement_lights.htm

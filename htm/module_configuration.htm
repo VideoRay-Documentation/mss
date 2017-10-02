@@ -6,16 +6,21 @@
 
 <h2>Conceptual Overview</h2>
 
-<p>Thrusters and other modules can be thought of as employees and the vehicle as the jobsite.  Each employee (Module) has a name (Serial Number stamped or printed on the module and coded in the firmware).  When the employee goes to work at the jobsite (is installed on the vehicle), it is also assigned an employee number (Node ID) by management (person doing the configuration).  Work instructions are announced to all employees at the same time, so each employee must listen for their specific instructions and ignore the instructions for other employees.  In order to accomplish this, employees can be assigned a specific work task (Application ID or Motor ID).  The employee will only listen for instructions related to their work task.  For example, a vertical thruster will only actuate when the depth control is engaged.</p>
+<p>Thrusters and other modules can be thought of as employees, and the vehicle as the jobsite.  Each employee (Module) has a unique name (Serial Number stamped or printed on the module and coded in the firmware).  When the employee goes to work at the jobsite (is installed on the vehicle), it is assigned an employee number (Node ID) by the person doing the configuration.  The jobsite supervisor (control software) communicates with the employees using their employee number, so the employee number for each module on a jobsite must be unique.  Work instructions are announced to all employees at the same time, so each employee must listen for their specific instructions and ignore the instructions for other employees.  When there are multiple employees of the same type on a jobsite, these employees may be assigned specific work tasks (Application ID or Motor ID).  The employee will only listen for instructions related to their work task.  For example a starboard thruster will only respond to horizontal control inputs, while a vertical thruster will only respond to vertical control inputs.  This approach allows vehicles to be configured with great flexibility.  Examples include:</p>
+
+<ul>
+  <li>A vehicle can be configured with one LED light, or with multiple LED lights.  Multiple LED lights can be controlled in unison, or divided into banks that operate independently.<p></p></li>
+  <li>A vehicle can be configured with a single vertical thruster, or additional vertical thrusters can be added to create a heavy lift vehicle, or to enable pitch and roll control.</li>
+  </ul>
 
 <h3>General Requirements</h3>
 
 <ol>
   <li>Each employee (Module) must have a unique name (Serial Number).</li>
-  <li>Each employee (Module) must have a unique employee number (Node ID) at a jobsite (vehicle).</li>
-  <li>Some employee (Modules) may be assigned specific work tasks (Application ID or Motor ID).  Examples include Forward Starboard Thruster or Port-side LED.</li>
-  <li>At a specific jobsite (Vehicle) more than one employee (Module) may be assigned the same work task (Application ID or Motor ID).  This will allow for vehicle configurations that include multiple vertical motors to increase the total lift capacity.</li>
-  <li>Modules have additional parameters that can be configured that can affect their performance.</li>
+  <li>Each employee (Module) must have a unique employee number (Node ID) on a jobsite (vehicle), but different vehicles may use repeated Node IDs.</li>
+  <li>Some employees (Modules) may be assigned specific work tasks (Application ID or Motor ID).</li>
+  <li>At a specific jobsite (Vehicle) more than one employee (Module) may be assigned the same work task (Application ID or Motor ID).</li>
+  <li>Modules may have additional parameters that can be configured that can affect their operation or performance, such as temperature cut-off, RPM limit or calibration values.</li>
   </ol>
 
 <p>The following sections provide information about module replacement.</p>

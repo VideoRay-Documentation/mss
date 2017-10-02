@@ -1,2 +1,0 @@
-v**,Manipulator/Cutter,controller_manip.html,pro_4/htm/controller_manip.htm,,controller_manip_sb.htm,
-v**,Cycle Display,,controller_cycle_display.htm,,,

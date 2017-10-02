@@ -1,2 +1,0 @@
-**,Tether Management Equipment,,nul,,,
-*,TDS,equip_tether_tds.html,pro_4/htm/equip_tether_tds.htm,,,

@@ -1,0 +1,23 @@
+!VSUB,controllerName,industrial
+!VSUB,controllerFullName,VideoRay Industrial
+!VSUB,controllerMapping,controller_industrial_mapping.htm
+!SUBLIST,controller_industrial.sub,controller_
+v*,VideoRay Industrial Controller,controller_industrial.html,controller.htm,../../mss/javascript/controller_industrial.js,,../../mss/images/controller_industrial.png
+v**,Forward / Reverse Control,controller_industrial_forward,controller_forward.htm,,controller_forward_sb.htm,,1
+v**,Lateral Control,controller_industrial_lateral,controller_lateral.htm,,controller_lateral_sb.htm,,1
+v**,Yaw Control,controller_industrial_yaw,controller_yaw.htm,,controller_yaw_sb.htm,,1
+v**,Depth Control,controller_industrial_depth,controller_depth.htm,,controller_depth_sb.htm,,1
+v**,Lights On,controller_industrial_lights_on,controller_lights_on.htm,,controller_lights_on_sb.htm,,1
+v**,Lights Off,controller_industrial_lights_off,controller_lights_off.htm,,controller_lights_off_sb.htm,,1
+v**,Lights Intensity,controller_industrial_lights_intensity,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+v**,Camera Select,controller_industrial_camera_select,controller_camera_select.htm,,controller_camera_select_sb.htm,,1
+v**,Camera Tilt Up,controller_industrial_tilt_up,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+v**,Camera Tilt Down,controller_industrial_tilt_down,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+v**,Camera Focus In,controller_industrial_focus_in,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+v**,Camera Focus Out,controller_industrial_focus_out,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+v**,Snapshot,controller_industrial_snapshot,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+v**,Video Record,controller_industrial_record,controller_record.htm,,controller_record_sb.htm,,1
+v**,Manipulator Open,controller_industrial_manip_open,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+v**,Manipulator Close,controller_industrial_manip_close,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+v**,Manipulator Rotate,controller_industrial_manip_rotate,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1
+v**,Cycle Display Mode,controller_industrial_cycle_display,controller_cycle_display.htm,,controller_cycle_display_sb.htm,,1

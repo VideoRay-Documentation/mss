@@ -1,2 +1,0 @@
-!INCLUDE,mss_base.txt,1
-!SUBLIST,base_finnsnes/controller.sub,controller_

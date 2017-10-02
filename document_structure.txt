@@ -1,0 +1,57 @@
+FILES:
+customer.txt, script, which calls mss_base.txt and if necessary includes substitution files (i.e. for controller definitions)
+
+customer.sub, master text substitution list to identify name, base, options and module arrangements
+
+mss_base.txt, core document script
+
+base_customer/ folder for customer specific files - same general structure as a regular document folder
+	htm/ folder for customer specific htm files
+
+images_customer/ folder for customer specific images 
+	?why not base/images/ like base/htm/? (not easy to stage?)
+
+
+FLOW
+customer.sub (master text sub list, automatically loaded depending on the name of the script and this file matching)
+
+customer.txt
+	mss_base.txt (via !INCLUDE)
+	customer/controller.sub (via !SUBLIST if ncessary)
+	example:
+		!INCLUDE,mss_base.txt,1
+		!SUBLIST,base_indian_navy/controller.sub,controller_
+
+mss_base.txt (from customer.txt)
+	controller.sub (standard) (via !SUBLIST - standard contoller definition - can be overwritten by specific controller.sub)
+	???_options (via !INCLUDE @@)  where ??? is ROV, panel, etc.
+
+customer/controller.sub (from customer.txt if necessary) (via !SUBLIST) - this will overwrite any defined in the master sub list
+
+customer/???_options.txt (from customer.sub) (via !INCLUDE @@) - for things like the payload skid or accessories
+
+htm/mss_???.htm (from mss_base.txt) (normal page definitions) - displays general info then loads specific customer info via htm includes
+	customer/htm/arrangement_???.htm (via <!--i-->@@<!--/i--> in mss_???.htm)
+	example:
+		mss_frame.htm in the base script gives an overview of the frame and then includes a specific <!--i-->@@arrangement_frame<!--/i-->
+		arrangement_frame is defined in the customer master text sub list
+		arrangement_frame points to arrangement_frame_type.htm with baseDir defined as mss/base_customer/htm/
+		The resulting file is mss/base_customer/htm/arrangement_frame_type.htm, where type = alpha or defender
+
+Controller Files:
+
+Update:  controller.lst list of controllers (shortName,fullName)
+Update:  controller_function_names.csv list of function names (shortName,FullName)
+Update:  controller_functions.txt list to include controller_name_functions.txt (!INCLUDE,controller_name_functions.txt)
+Add:  controller_name.sub substitution list for controller function name to image name
+htm/controller.htm includes controllerName, controllerFullName, controller_name_mapping
+Add:  htm/controller_functionName.htm description of function
+Add:  images/controller_name and controller_name_xx (xx = button/function code a1... b1...)
+Add:  javascript/controller_name.js
+
+baseDir/controller_name.sub
+
+Auto Generated:
+_controller_functions.txt
+_controller_name_functions.txt
+htm/_controller_name_mapping.htm

@@ -15,7 +15,7 @@
   <li>Using the 10mm wrench or socket driver, loosen the two (2) M6 plastic thruster bolts securing the thruster to the frame.</li>
   <li>Remove the damaged thruster from the vehicle. If the propeller is still in good shape, remove it from the damaged thruster using a 7/16" nut driver.</li>
   <li>Install a new correct orientation propeller (or the recovered propeller) on the new thruster.</li>
-  <li>Note the serial number for the new replacement thruster. This number will be used to identify and program the new thruster once installed in the vehicle.</li>
+  <li>Note the serial number for the new replacement thruster. The serial number is stamped into both sides of the mounting strut.  This number will be used to identify and program the new thruster once installed in the vehicle.</li>
   <li>Install the new replacement thruster in the same location as the one being replaced, and thread the cable and connector through the same routing as the old thruster. Connect the cable to the same location in the connector stack as before.</li>
   <li>Mount the thruster to the frame using the M6 nylon bolts, and the 10mm nut driver.  Do not overtighten the bolts.</li>
   </ol>
@@ -27,31 +27,31 @@
 <p><img src="../../required/images/icon_note.png"> Commands below are case sensitive.</p>
 
 <ol>
-  <li>Power up the system, but do not start the control software.</li>
+  <li>Connect and power up the system, but do not start the control software.</li>
   <li>Launch the terminal program and use the following commands to program the thruster.</li>
   <li>Navigate to the working folder, type: <span class= "folder">cd flighthack</span></li>
   <li>Enumerate the modules on the system, type: <span class= "folder">vr_enum</li>
-  <li>The new thruster serial number should appear in the list of enumerated devices.</li>
-  <li>Register the new thruster, type: <span class= "folder">vr_setid <i>[SN] [Node ID] [Group ID]</i></span> where <i>[SN]</i> is the serial number of the new thruster, and the <i>[Node ID]</i> and <i>[Group ID]</i> are from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_thrusters.html">thruster configuration table</a>  This step ensures that each thruster has a unique ID to the system.</li>
-  <li>Type <span class= "folder">vr_enum</span> again to verify the new thruster is registered.</li>
-  <li>Enter diagnostic mode on the new thruster, type: <span class= "folder">./vr_debug_putty.py <i>[Node ID]</i></span> where <i>[Node ID]</i> is the Node ID of the new thruster.</li>
-  <li>When the thruster enters diagnostic mode (main menu in putty window), press the <span class= "folder">c</span> key to access the configuration menu.  These steps allow you to define the thruster's position on the vehicle {Motor ID) and operating parameters.</li>
+  <li>The new thruster serial number should appear in the list of enumerated devices.  Note that the serial number stamped on the thruster strut is only the ending significant digits.  The serial number found in the output from vr_enum uses the complete format, such as THRxxxxxx, where xxxxxx is the sequential number.</li>
+  <li>Register the new thruster, type: <span class= "folder">vr_setid <i>[SN] [Node ID] [Group ID]</i></span> where <i>[SN]</i> is the serial number of the new thruster (case sensitive value as found in the vr_enum output), and the <i>[Node ID]</i> and <i>[Group ID]</i> are from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_thrusters.html">thruster configuration table</a>  This step ensures that each thruster has a unique ID to the system.</li>
+  <li>Type <span class= "folder">vr_enum</span> again to verify the new thruster is registered with its Node ID.</li>
+  <li>Enter diagnostic mode on the new thruster, type: <span class= "folder">./vr_debug_putty.py <i>[Node ID]</i></span> where <i>[Node ID]</i> is the Node ID of the new thruster.  This will open a new diagnostic window.</li>
+  <li>In the diagnostic window, press the <span class= "folder">c</span> key to access the configuration menu.  These steps allow you to define the thruster's position on the vehicle {Motor or Application ID) and operating parameters.</li>
   <li>Change the necessary values from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_thrusters.html">thruster configuration table</a>.  Minimally, the following settings should be entered or confirmed:
     <ol>
       <li>Whether reverse is Enabled or Disabled (configuration parameter 2)</li>
-      <li>Motor ID (Also called Application ID in the configuration table, configuration parameter 31)</li>
-      <li>Maximum Thruster Power (configuration parameter 17, current recommended value is 400)</li>
+      <li>Maximum Thruster Power (configuration parameter 17, current recommended value is <!--i-->400||$$maxThrusterPower<!--/i-->)</li>
+      <li>Motor or Application ID (configuration parameter 31)</li>
       </ol>
 To change the values, follow these steps:
     <ol>
       <li>For most parameters, enter the <span class= "folder">[Option Number]</span> followed by <span class= "folder">Enter</span>, then the <span class= "folder">[Desired Value]</span> followed by <span class= "folder">Enter</span>.</li>
-      <li>For the Reverse command (configuration parameter 2), simple enter <span class= "folder">2</span> to toggle the value from Disabled to Enabled or back again.</li>
+      <li>For the Reverse command (configuration parameter 2), simple enter <span class= "folder">2</span> followed by <span class= "folder">Enter</span> to toggle the value from Disabled to Enabled or back again.</li>
       </ol>
     </li>
   <li>Press the <span class= "folder">s</span> key and <span class= "folder">Enter</span> to save the configuration.</li>
   <li>Press the <span class= "folder">x</span> key and <span class= "folder">Enter</span> to exit the configuration menu.</li>
   <li>Press the <span class= "folder">x</span> key again to exit diagnostic mode.</li>
-  <li>Close the putty window.</li>
+  <li>Close the diagnostic window.</li>
   <li>Close the terminal window.</li>
   </ol>
 

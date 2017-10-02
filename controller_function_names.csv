@@ -1,0 +1,24 @@
+
+reserved,Reserved
+forward,Forward / Reverse Control
+lateral,Lateral Control
+yaw,Yaw Control
+depth,Depth Control
+pitch_up,Pitch Up
+pitch_down,Pitch Down
+lights_on,Lights On
+lights_off,Lights Off
+lights_intensity,Lights Intensity
+camera_select,Camera Select
+tilt_up,Camera Tilt Up
+tilt_down,Camera Tilt Down
+focus_in,Camera Focus In
+focus_out,Camera Focus Out
+zoom_in,Camera Zoom In
+zoom_out,Camera Zoom Out
+snapshot,Snapshot
+record,Video Record
+cycle_display,Cycle Display Mode
+manip_open,Manipulator Open
+manip_close,Manipulator Close
+manip_rotate,Manipulator Rotate

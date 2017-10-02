@@ -1,3 +1,0 @@
-v*,Rotating Manipulator,NUL,../../rotating_manipulator,,,
-v*,BlueView Imaging Sonar,,blueview_df.htm,,,
-v*,Tritech USBL System,,tritech_micronnav.htm,,,

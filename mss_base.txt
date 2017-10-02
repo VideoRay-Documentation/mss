@@ -4,32 +4,38 @@
 !DOC_TYPE,Operator's Manual
 !OUT_DIR,mss/
 !INCLUDED_PAGES,
-!EXCLUDED_PAGES,a
+!EXCLUDED_PAGES,
 !VALID_TEXT,5
 !TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm
 
 !HTML_VERSION,$mss_html_version
 
-!SUBLIST,controller.sub,controller_
-
 #Documentation Generation
 !INCLUDE,required/intro_qs_.txt,1
 !INCLUDE,required/overview_qs_.txt,1
+v**,System Voltage Advisory,,system_voltage.htm,,,
 
 v*,Equipment Guide,equip_.html,pro_4/htm/equip_.htm,,,
 
-v**,System Voltage Caution,system_voltage.html,pro_4/htm/system_voltage.htm,,,
-
 v**,ROV Submersible,,equip_rov.htm,,,
 v***,Submersible Frame,,mss_frame.htm,,,
-v***,Buoyancy,,mss_buoyancy.htm,,rov_buoyancy_sb.htm,
+5v****,Alpha Frame,,mss_frame_alpha.htm,,,
+5v****,Defender Frame,,mss_frame_defender.htm,,,
+v***,Buoyancy,,mss_buoyancy.htm,,,
+v***,Ballast,,mss_ballast.htm,,,
 v***,Power Module,,mss_power.htm,,,
-v***,Communications Module,,mss_communications.htm,,,
+v***,Communications Module,,mss_communication.htm,,,
 v***,AHRSD Module (IMU),,mss_ahrsd.htm,,,
-v***,Thruster Module,,mss_thrusters.htm,,,
-v***,Camera Module,,mss_cameras.htm,,,
-v***,Light Module,,mss_lights.htm,,,
-!INCLUDE,@@rov_options,3
+v***,Thruster Module,,mss_thruster.htm,,,
+5v****,Alpha Frame Thrusters,,mss_thruster_alpha.htm,,,
+5v****,Defender Frame Thrusters,,mss_thruster_defender.htm,,,
+v***,Camera Module,,mss_camera.htm,,,
+5v****,High Definition Camera,,mss_camera_hd.htm,,,
+5v****,Low Light Camera,,mss_camera_low_light.htm,,,
+v***,Light Module,,mss_light.htm,,,
+5v****,Alpha Frame Lights,,mss_light_alpha.htm,,,
+5v****,Defender Frame Lights,,mss_light_defender.htm,,,
+!INCLUDE,@@options_rov,3
 
 v***,ROV Connections,,mss_connections.htm,,mss_connections_sb.htm,
 
@@ -38,44 +44,33 @@ v***,Safety Circuits,panel_safety.html,pro_4/htm/panel_safety.htm,,,
 v***,Switches and Connections,,panel_connections.htm,,,
 v****,Computer,panel_computer.html,pro_4/htm/panel_computer.htm,,,
 v****,Monitor,panel_monitor_std.html,pro_4/htm/panel_monitor_std.htm,,,
-!INCLUDE,@@panel_options,3
+!INCLUDE,@@options_panel,3
 
-v**,Hand Controller,equip_controller.html,pro_4/htm/equip_controller.htm,,,
-v***,Hand Controller Mapping,,nul,,,
-v****,VideoRay Industrial Controller,,controller_industrial.htm,../../mss/javascript/equip_controller.js,,../../pro_4/images/hand_controller_v1rb.png
-v***,Hand Controller Functions,,nul,,,
-v****,Joystick,controller_joystick.html,pro_4/htm/controller_joystick.htm,,pro_4/htm/controller_joystick_sb.htm,
-v****,Depth Control,controller_depth.html,pro_4/htm/controller_depth.htm,,controller_depth_sb.htm,
-v****,Camera Tilt,controller_tilt.html,pro_4/htm/controller_tilt.htm,,controller_tilt_sb.htm,
-v****,Camera Focus,controller_focus.html,pro_4/htm/controller_focus.htm,,controller_focus_sb.htm,
-v****,Lights,controller_lights.html,pro_4/htm/controller_lights.htm,,controller_lights_sb.htm,
-v****,Snapshot,controller_snapshot.html,pro_4/htm/controller_snapshot.htm,,controller_snapshot_sb.htm,
-v****,Record,controller_record.html,pro_4/htm/controller_record.htm,,controller_record_sb.htm,
-#v****,Camera Select,controller_camera.html,pro_4/htm/controller_camera.htm,,,
-#v****,Manipulator/Cutter,controller_manip.html,pro_4/htm/controller_manip.htm,,controller_manip_sb.htm,
-#v****,Help,controller_help.html,pro_4/htm/controller_help.htm,,,
-!INCLUDE,@@controller_options,3
+v**,Hand Controller,,equip_controller.htm,,,
+!INCLUDE,@@controller_functions,3
+!INCLUDE,@@options_controller,3
 
 v**,Tether,equip_tether.html,pro_4/htm/equip_tether.htm,,,../../pro_4/images/tether.jpg
 v***,Tether Specifications,equip_tether_specs.html,pro_4/htm/equip_tether_specs.htm,,,
-!INCLUDE,@@tether_options,3
+!INCLUDE,@@options_tether,3
 
 #v***,TDS,equip_tether_tds.html,equip_tether_tds.htm,,,../../mss/images/tds.jpg
-!INCLUDE,@@tme_options,3
+!INCLUDE,@@options_tme,3
 
-!INCLUDE,@@equipment_options,2
+!INCLUDE,@@options_equipment,2
 
 v**,Connections Summary,,equip_connections.htm,,,
 
 v**,Accessories,equip_acc.html,pro_4/htm/equip_acc.htm,,,
 v***,Included Accessories,acc_included.html,pro_4/htm/acc_included.htm,,,
-!INCLUDE,@@accessory_options,4
+!INCLUDE,@@options_accessories,4
+
 #v***,Optional Accessories,accessories_category1.html,library/htm/_accessories_cat.htm,,,
 v***,Mission Support Accessories,acc_mission.htm,pro_4/htm/acc_mission.htm,,,
 
 v*,Software Guide,,software_.htm,,,
-v**,VideoRay Interface Overview,,software_interface_videoray.htm,,,
 v**,Greensea Interface Overview,,software_interface_greensea.htm,,,
+v**,VideoRay Interface Overview,,software_interface_videoray.htm,,,
 #***,Video Window,,video_window.htm,,,
 #****,Video Text Overlay,,video_overlay.htm,,,
 #***,Instruments,,instruments.htm,,,
@@ -110,7 +105,7 @@ v**,Greensea Interface Overview,,software_interface_greensea.htm,,,
 #***,Controller Mapping,,controller_mapping.htm,,,
 #***,Power Management,,power_management.htm,,,
 
-!INCLUDE,@@software_options,2
+!INCLUDE,@@options_software,2
 
 v**,Software Management,,software_mgmt.htm,,,
 #v***,Software Installation,,install.htm,,,
@@ -122,18 +117,20 @@ v****,Updating Firmware,,updating_firmware.htm,,,
 
 v*,Maintenance Guide,,maintenance_guide.htm,,,
 v**,Diagnostics,,diagnostics.htm,,,
+**,Software Tools,software_tools.html,m5_base/htm/software_tools.htm,,,
+**,MSS Configuration OverView,configuration_overview.html,m5_base/htm/configuration_overview.htm,,,
 v**,Module Configuration,,module_configuration.htm,,,
+v***,Configuration Commands,,configuration_commands.htm,,,
 v***,Thruster Replacement,,replacement_thruster.htm,,,
 
-#*,Component Modules Guide,,components_guide.htm,,,
-#**,M5 Communications Module,comms_overview_.html,m5_communications/htm/overview_.htm,,,
-#!INCLUDE,m5_communications/core.txt,3
-#**,M5 IMU Module,imu_overview_.html,m5_imu/htm/overview_.htm,,,
-#!INCLUDE,m5_imu/core.txt,3
-#**,M5 LED Light Module,led_light_overview_.html,m5_led_light/htm/overview_.htm,,,
-#!INCLUDE,m5_led_light/core.txt,3
-#**,M5 Power Module,power_overview_.html,m5_power/htm/overview_.htm,,,
-#!INCLUDE,m5_power/core.txt,3
-#**,M5 Thruster Module,thruster_overview_.html,m5_thruster/htm/overview_.htm,,,
-#!INCLUDE,m5_thruster/core.txt,3
-#!INCLUDE,library/regional.txt,1
+#*,Component Modules Guides,,components_guide.htm,,,
+#**,M5 AHRSD Module,nul[%],../../m5_ahrsd/index.htm,,,
+#**,m5 Camera Module,nul[%],../../m5_camera/index.htm,,,
+#**,M5 Communications Module,nul[%],../../m5_communications/index.htm,,,
+#**,M5 LED Light Module,nul[%],../../m5_led_light/index.htm,,,
+#**,M5 Power Module,nul[%],../../m5_power/index.htm,,,
+#**,M5 Thruster Module,nul[%],../../m5_thruster/index.htm,,,
+
+v*,Pro 4 Upgrader's Guide,,pro_4_upgraders.htm,,,
+
+!INCLUDE,library/regional.txt,1
