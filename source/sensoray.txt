@@ -1,0 +1,52 @@
+			NOTE DEFAULT is 192.168.30.11
+
+network
+192.168.1.11
+255.255.255.0
+192.168.1.1
+192.168.1.1
+
+video
+25 fps
+
+Stream A Control:
+	     ip address: 192.168.1.215 
+                Port: 1802
+	     Retry Timeout: 0
+                Packet Headers: None
+                Startup: ON
+	     submit then start streaming
+ 
+Stream A Configuration:
+                Format: h.264 ves
+                Resolution: 1280x720
+                Frame Rate: 25 (NOTE: video setting may have to be set first)
+                Bit Rate: 6000000(this can be increased)
+                GOP: 2
+                Aspect Ratio: None
+                Transform: None
+	    OSD: OFF
+ 
+Video:
+                Frame Rate: 25
+                Image Stabilization: Off
+                Face Detect: off
+                Exposure Mode: Auto
+                Auto Exposure Shutter: 1/5000
+                White Balance Mode: Auto
+                White Balance Speed: Normal
+                Wide Dynamic Range: Disable
+                Wide WDR D: Disable
+
+
+Check firmware on sensoray is s3011_1332.fw (this on ftp.videoray.com) update as needed
+
+
+Additional Camera configuration:
+Check firmware and configuration on the spam 
+CAMERA FWD	4	196 (0xC4)	N/A	2 (7445) (To talk to internal electronics)	192.168.1.11 
+				(vrport2)	http://192.168.1.11/streamA.jpg?multipart=true (HD)
+					and use gstreamer
+
+
+On new cameras raw serve offset should be 1500 and gain should be -1

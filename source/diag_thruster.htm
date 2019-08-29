@@ -1,0 +1,54 @@
+1.	Clarification of symptoms: 
+a.	I assume all thrusters were operational on the bench previously?  Or is it possible some might have been nonfunctional?
+b.	Can verify if you are using manual control (joystick) or clicking on the interface or using auto controls?
+c.	Can you verify if you disconnected all thruster cables when swapping the power module or did you just disconnect at the connector?
+d.	When you say “appear to be reversed”, can you describe that in more details?   Like if you push forward the vehicle goes backwards?   If you try to rotate CCW it goes CW?  Or more complex behavior?
+e.	Can you verify that all horizontal thrusters are spinning when you press forward in manual control?
+ 
+ 
+2.	Ensure the joystick is functional. 
+a.	This can be tested in the greensea software on the vehicle configuration page.
+                                                               i.      Alt-2, select Vehicle Configuration tab.
+                                                             ii.      There are tell tale lights for buttons and gauges for the analogs (joysticks and knobs).
+                                                           iii.      Actuate the joystick and the depth knob and make sure the gauges move their full scale.
+ 
+3.	Check Cabling: 
+a.	Order of insertion doesn’t matter, but we do try to be consistent (see attached), This might help isolate if it’s a single module or cabling bringing down comms.
+b.	Check all cables are secure and fully inserted.
+c.	Check if the nonfunctioning thrusters are all on one chain (all connected to the same power module connector)
+d.	Visually inspect cables for damage or swelling at the connectors.
+ 
+4.	Check comms from the power module. 
+a.	The thruster / LED bus is on two software bridged serial ports on the two 5 pin connectors on the power module.
+b.	Check to see if BOTH LED modules are functional.   The LEDs are actuated by the lower top knob on the left hand side of the controller.
+c.	Run vr_enum from a command line.
+                                                               i.      Open a terminal (ctrl-alt-t or click on the terminal icon on the left hand side of the unbuntu desktop)
+                                                             ii.      Ensure that the vehicle is powered up
+                                                           iii.      Enter vr_enum in the command line.
+1.	This should return with list of modules on accessible on the serial bus.
+2.	If you don’t see all the modules run it 1 or 2 more times.
+ 
+Let us know the results of the above tests before proceeding since those might have isolated the issue.
+ 
+5.	Check for possibly faulty / misconfigured modules. 
+a.	Power off the ROV and Disconnect all the modules on the 5 pin bus.
+b.	Start connecting them one at a time and repeat 4.c above power cycling the ROV each time you insert a new module.
+ 
+6.	Check for misconfigured modules (or modules whose flash storage has been corrupted).  Might be easiest to walk you through this on the phone or remote in: 
+a.	Open a terminal (ctrl-alt-t or click on the terminal icon on the left hand side of the unbuntu desktop)
+b.	Enter the flighthack directory (cd flighthack)
+c.	Ensure that the vehicle is powered up
+d.	Use vr_debug_putty to check the thruster configurations.
+                                                               i.      ./vr_debug_putty.py # (where # is the node id of each thruster 5,6,7,8,9,10,11,20)
+                                                             ii.      In the terminal that opens, you should see the thruster diagnostic page
+                                                           iii.      Press ‘c’ to configure
+                                                           iv.      Verify the settings per the attached sheet (Node ID, Motor ID, Max Power, and Reverse Rotation ) or:
+1.	Press ‘f’ to reset to factory defaults
+2.	Set Node ID, Motor ID, Max Power, and Reverse Rotation per the attached sheet.
+3.	Press ‘s’ to save.
+4.	Press ‘x’
+5.	Press ‘x’
+                                                             v.      Close the putty terminal window
+ 
+7.	We’ll leave things like incorrect firmware on power module or thrusters and  greensea configuration file corruption as things to check later
+ 

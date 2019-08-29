@@ -6,13 +6,70 @@
 
 <h2>Thruster Propeller</h2>
 
-<p>The propellers are designed to be used on counter-rotating thruster arrangements to eliminate torque roll or yaw.  Propellers are identified by their pitch orientation using left and right based on their use on VideoRay Pro 4 ROVs.</p>
+<p>The propellers are designed to be used on counter-rotating thruster arrangements to eliminate torque roll or yaw.  Propellers are identified by their pitch orientation using left and right based on their pitch.  The convex edge of the propeller blade is the leading edge during motion that is considered forward for that thruster.</p>
 
 <ul>
-  <li>Left-handed propellers have blades that appear to curve clockwise when viewed from the rear.<br /><img src="../../pro_4/images/propeller_left.png" width="200"></li>
-  <li>Right-handed propellers have blades that appear to curve counterclockwise when viewed from the rear.<br /><img src="../../pro_4/images/propeller_right.png" width="200"></li>
+  <li>Right-hand propellers can be identified as follows:
+    <ul>
+      <li>The top blade has the leading edge on the right when viewed from the end with the nut.</li>
+      <li>The blades appear to curve counterclockwise when viewed from the end with the nut.</li>
+      <li>Right hand propellers have a stainless steel collar on the hub at the shaft end.</li>
+      </ul>
+<br /><img src="../../pro_4/images/propeller_right.png" width="200"></li>
+   </li>
+  <li>Left-hand propellers can be identified as follows:
+    <ul>
+      <li>The top blade has the leading edge on the left when viewed from the end with the nut.</li>
+      <li>The blades appear to curve clockwise when viewed from the end with the nut.</li>
+      <li>Left hand propellers have hub that is all plastic.</li>
+      </ul>
+<br /><img src="../../pro_4/images/propeller_left.png" width="200"></li>
+    </li>
   </ul>
 
-<h2>Thruster Arrangement</h2>
+<h2>Cable Pinout</h2>
+
+<p>The Thruster connector uses a male / female stackable connector allowing the thrusters and LED lights to be connected in series.</p>
+
+<table>
+  <tr>
+    <th>Pin</th>
+    <th>Function</th>
+    <th>Wire AWG</th>
+    <th>Color</th>
+    </tr>
+  <tr>
+    <td>1</td>
+    <td>48 V DC +</td>
+    <td>20</td>
+    <td>Red</td>
+    </tr>
+  <tr>
+    <td>2</td>
+    <td>GND</td>
+    <td>22</td>
+    <td>Green</td>
+    </tr>
+  <tr>
+    <td>3</td>
+    <td>48 V DC -</td>
+    <td>20</td>
+    <td>Black</td>
+    </tr>
+  <tr>
+    <td>4</td>
+    <td>RS-485 A</td>
+    <td>24</td>
+    <td>Gray</td>
+    </tr>
+  <tr>
+    <td>5</td>
+    <td>RS-485 B</td>
+    <td>24</td>
+    <td>White</td>
+    </tr>
+  </table>
+
+<a name="tagArrangement"></a><script type="text/javascript">document.write('<h2 style="background-color: ' + $_GET['arrangement'] + '">');</script>Thruster Arrangement <script type="text/javascript">highlight('arrangement','yellow','tagArrangement');</script></h2>
 
 <!--i-->@@arrangement_thruster<!--/i-->

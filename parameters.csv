@@ -1,197 +1,307 @@
-Customer	CRADA	Defender 1	Ercomar	FDA	FIO	Indian Navy	JFN	Proceanic	SPAWAR	Stinger	VR Sales
-Full Name	CRADA	Defender 1	Ercomar	Finnsnes Diving and Constuction 	Florida Institute of Oceanography	Indian Navy	Jame Fisher Nuclear	Proceanic	SPAWAR	Stinger	VideoRay Sales
-htmlVersion	crada	defender_1	ercomar	fda	fio	indian_navy	jfn	proceanic	spawar	stinger	vr_sales
-configName	CRADA	Defender	Ercomar	Finnsnes Diving and Constuction 	Florida Institute of Oceanography	Indian Navy	Jame Fisher Nuclear	Proceanic	SPAWAR	Stinger	VideoRay Sales
-Frame Type	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Buoyancy Type	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Ballast Type	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Payload Platform											
-											
-Power Module	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Group ID	195	195	195	195	195	195	195	195	195	195	195
-Node ID	1	1	1	1	1	1	1	1	1	1	1
-											
-Comms Module	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Group ID	193	193	193	193	193	193	193	193	193	193	193
-Node ID	2	2	2	2	2	2	2	2	2	2	2
-Port 2 Device		AHRSD				High Definition Camera					
-Port 2 TCP/IP		192.168.1.65		192.168.1.11		192.168.1.11					
-Port 2 TCP Port		7445		7445		7445					
-Port 2 Baud Rate						115200					
-Port 2 RS485						No					
-Port 2 Notes						http://192.168.1.11/streamA.jpg?multipart=true					
-Port 3 Device		Camera				Rotating Manipulator					
-Port 3 TCP/IP		192.168.1.11				192.168.1.64					
-Port 3 TCP Port		7446		7446		7446					
-Port 3 Baud Rate						38400					
-Port 3 RS485						Yes					
-Port 3 Notes											
-Port 4 Device						AHRSD					
-Port 4 TCP/IP						192.168.1.65					
-Port 4 TCP Port		7447		7447		7447					
-Port 4 Baud Rate						115200					
-Port 4 RS485						No					
-Port 4 Notes						port 7444 IMU, port 7445 Depth					
-Port 5 Device						Low Light Camera					
-Port 5 TCP/IP						192.168.1.13					
-Port 5 TCP Port		7448		7448		7448					
-Port 5 Baud Rate						115200					
-Port 5 RS485						No					
-Port 5 Notes						http://192.168.1.13/streamA.jpg?multipart=true					
-Port 6 Device		Rotating Manipulator / GPS				Micron Scanning Sonar					
-Port 6 TCP/IP						192.168.1.64					
-Port 6 TCP Port		7449		7449		7449					
-Port 6 Baud Rate		38400				115200					
-Port 6 RS485		Yes				Yes					
-Port 6 Notes											
-											
-AHRSD Module	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Group ID	194	194	194	194	194	194	194	194	194	194	194
-Node ID	3	3	3	3	3	3	3	3	3	3	3
-											
-Thruster Module	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Thruster 1 Location	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port
-Thruster 1 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 1 Node ID	5	5	5	5	5	5	5	5	5	5	5
-Thruster 1 Application ID	0	0	0	0	0	0	0	0	0	0	0
-Thruster 1 Propeller	R	R	R	R	R	R	R	R	R	R	R
-Thruster 1 Reverse	D	D	D	D	D	D	D	D	D	D	D
-Thruster 1 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 2 Location	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard
-Thruster 2 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 2 Node ID	6	6	6	6	6	6	6	6	6	6	6
-Thruster 2 Application ID	1	1	1	1	1	1	1	1	1	1	1
-Thruster 2 Propeller	L	L	L	L	L	L	L	L	L	L	L
-Thruster 2 Reverse	E	E	E	E	E	E	E	E	E	E	E
-Thruster 2 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 3 Location	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard
-Thruster 3 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 3 Node ID	7	7	7	7	7	7	7	7	7	7	7
-Thruster 3 Application ID	2	2	2	2	2	2	2	2	2	2	2
-Thruster 3 Propeller	R	R	R	R	R	R	R	R	R	R	R
-Thruster 3 Reverse	D	D	D	D	D	D	D	D	D	D	D
-Thruster 3 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 4 Location	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port
-Thruster 4 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 4 Node ID	8	8	8	8	8	8	8	8	8	8	8
-Thruster 4 Application ID	3	3	3	3	3	3	3	3	3	3	3
-Thruster 4 Propeller	L	L	L	L	L	L	L	L	L	L	L
-Thruster 4 Reverse	E	E	E	E	E	E	E	E	E	E	E
-Thruster 4 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 5 Location	Forward Vertical	 Vertical Forward Port	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical
-Thruster 5 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 5 Node ID	9	9	9	9	9	9	9	9	9	9	9
-Thruster 5 Application ID	4	6	4	4	4	4	4	4	4	4	4
-Thruster 5 Propeller	R	R	R	R	R	R	R	R	R	R	R
-Thruster 5 Reverse	D	D	D	D	D	D	D	D	D	D	D
-Thruster 5 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 6 Location	Aft Vertical	Vertical Forward Starboard	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical
-Thruster 6 Group ID	129	129	129	129	129	129	129	129	129	129	129
-Thruster 6 Node ID	10	10	10	10	10	10	10	10	10	10	10
-Thruster 6 Application ID	5	4	5	5	5	5	5	5	5	5	5
-Thruster 6 Propeller	L	L	L	L	L	L	L	L	L	L	L
-Thruster 6 Reverse	E	D	E	E	E	E	E	E	E	E	E
-Thruster 6 Max Power	400	400	400	400	400	400	400	400	400	400	400
-											
-Thruster 7 Location		Vertical Aft									
-Thruster 7 Group ID		129									
-Thruster 7 Node ID		20									
-Thruster 7 Application ID		5									
-Thruster 7 Propeller		L									
-Thruster 7 Reverse		E									
-Thruster 7 Max Power		400									
-											
-Thruster 8 Location											
-Thruster 8 Group ID											
-Thruster 8 Node ID											
-Thruster 8 Application ID											
-Thruster 8 Propeller											
-Thruster 8 Reverse											
-Thruster 8 Max Power											
-											
-Thruster 9 Location											
-Thruster 9 Group ID											
-Thruster 9 Node ID											
-Thruster 9 Application ID											
-Thruster 9 Propeller											
-Thruster 9 Reverse											
-Thruster 9 Max Power											
-											
-Thruster 10 Location											
-Thruster 10 Group ID											
-Thruster 10 Node ID											
-Thruster 10 Application ID											
-Thruster 10 Propeller											
-Thruster 10 Reverse											
-Thruster 10 Max Power											
-											
-Thruster 11 Location											
-Thruster 11 Group ID											
-Thruster 11 Node ID											
-Thruster 11 Application ID											
-Thruster 11 Propeller											
-Thruster 11 Reverse											
-Thruster 11 Max Power											
-											
-Thruster 12 Location											
-Thruster 12 Group ID											
-Thruster 12 Node ID											
-Thruster 12 Application ID											
-Thruster 12 Propeller											
-Thruster 12 Reverse											
-Thruster 12 Max Power											
-											
-Camera 1 Type	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd
-Camera 1 Location	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center
-Camera 1 Group ID	196	196	196	196	196	196	196	196	196	196	196
-Camera 1 Node ID	4	4	4	4	4	4	4	4	4	4	4
-Camera 1 TCP/IP	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11
-											
-Camera 2 Type						low_light					
-Camera 2 Location						Forward Bottom					
-Camera 2 Group ID						196					
-Camera 2 Node ID						12					
-Camera 2 TCP/IP						192.168.1.13					
-											
-Camera 3 Type											
-Camera 3 Location											
-Camera 3 Group ID											
-Camera 3 Node ID											
-Camera 3 TCP/IP											
-											
-Camera 4 Type											
-Camera 4 Location											
-Camera 4 Group ID											
-Camera 4 Node ID											
-Camera 4 TCP/IP											
-											
-Light 1 Type	alpha	defender	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha	alpha
-Light 1 Location	Forward Center Top	Forward Top Port / Starboard	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top
-Light 1 Group ID	131	131	131	131	131	131	131	131	131	131	131
-Light 1 Node ID	11	11	11	11	11	11	11	11	11	11	11
-											
-Light 2 Type											
-Light 2 Location											
-Light 2 Group ID											
-Light 2 Node ID											
-											
-Light 3 Type											
-Light 3 Location											
-Light 3 Group ID											
-Light 4 Node ID											
-											
-Light 4 Type											
-Light 4 Location											
-Light 4 Group ID											
-Light 4 Node ID											
-											
-Accessories											
-BlueView Sonar											
-Oculus Sonar											
-Gemini Sonar											
-Rotating Manipulator											
+Customer	Pro 5	Defender	Ercomar Defender	CRADA	Ercomar	FDA	FIO	Indian Navy	Indian Navy Defender	JFN	Proceanic	SPAWAR	Stinger	VR Sales
+Full Name	Pro 5	Defender	Ercomar Defender	CRADA	Ercomar	Finnsnes Diving and Constuction 	Florida Institute of Oceanography	Indian Navy	Indian Navy Defender	Jame Fisher Nuclear	Proceanic	SPAWAR	Stinger	VideoRay Sales
+configName	Pro 5	Defender	Ercomar Defender	CRADA	Ercomar	Finnsnes Diving and Constuction 	Florida Institute of Oceanography	Indian Navy	Indian Navy Defender	Jame Fisher Nuclear	Proceanic	SPAWAR	Stinger	VideoRay Sales
+htmlVersion	pro_5	defender	ercomar_defender	crada	ercomar	fda	fio	indian_navy	indian_navy_defender	jfn	proceanic	spawar	stinger	vr_sales
+Serial Number														
+														
+Frame Type	pro_5	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Buoyancy Type	pro_5	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Ballast Type	pro_5	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Payload Platform														
+														
+Power Module Type	dual	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Power Serial Number														
+Power Group ID		195	195	195	195	195	195	195	195	195	195	195	195	195
+Power Node ID		1	1	1	1	1	1	1	1	1	1	1	1	1
+														
+Comms Module Type	dual	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Comms Serial Number														
+Comms Group ID		193	193	193	193	193	193	193	193	193	193	193	193	193
+Comms Node ID		2	2	2	2	2	2	2	2	2	2	2	2	2
+														
+Port 2 TCP Port	N/A	7445	7445			7445		7445	7445					
+Port 2 Baud Rate								115200	115200					
+Port 2 Notes								http://192.168.1.11/streamA.jpg?multipart=true	http://192.168.1.11/streamA.jpg?multipart=true					
+														
+Port 3 TCP Port	7446	7446	7446			7446		7446	7446					
+Port 3 Baud Rate								38400	38400					
+Port 3 Notes														
+														
+Port 4 TCP Port	N/A	7447	7447			7447		7447	7447					
+Port 4 Baud Rate								115200	115200					
+Port 4 Notes								port 7444 IMU, port 7445 Depth	port 7444 IMU, port 7445 Depth					
+														
+Port 5 TCP Port	7448	7448	7448			7448		7448	7448					
+Port 5 Baud Rate								115200	115200					
+Port 5 Notes								http://192.168.1.13/streamA.jpg?multipart=true	http://192.168.1.13/streamA.jpg?multipart=true					
+														
+Port 6 TCP Port	7449	7449	7449			7449		7449	7449					
+Port 6 Baud Rate	38400	38400						115200	115200					
+Port 6 Notes														
+														
+AHRSD Module		defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+AHRSD Serial Number														
+AHRSD Group ID		194	194	194	194	194	194	194	194	194	194	194	194	194
+AHRSD Node ID		3	3	3	3	3	3	3	3	3	3	3	3	3
+AHRSD Notes														
+														
+Thruster Module	pro_5	defender	defender	alpha	alpha	alpha	alpha	alpha	defender	alpha	alpha	alpha	alpha	alpha
+Thruster 1 Serial Number														
+Thruster 1 Location	Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port	Forward Port
+Thruster 1 Group ID	129	129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 1 Node ID	5	5	5	5	5	5	5	5	5	5	5	5	5	5
+Thruster 1 Application ID	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Thruster 1 Propeller	L	R	R	R	R	R	R	R	R	R	R	R	R	R
+Thruster 1 Reverse	E	D	D	D	D	D	D	D	D	D	D	D	D	D
+Thruster 1 Max Power	400	400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 1 Notes														
+														
+Thruster 2 Serial Number														
+Thruster 2 Location	Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard	Forward Starboard
+Thruster 2 Group ID	129	129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 2 Node ID	6	6	6	6	6	6	6	6	6	6	6	6	6	6
+Thruster 2 Application ID	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Thruster 2 Propeller	R	L	L	L	L	L	L	L	L	L	L	L	L	L
+Thruster 2 Reverse	D	E	E	E	E	E	E	E	E	E	E	E	E	E
+Thruster 2 Max Power	400	400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 2 Notes														
+														
+Thruster 3 Serial Number														
+Thruster 3 Location	Vertical	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard	Aft Starboard
+Thruster 3 Group ID	129	129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 3 Node ID	7	7	7	7	7	7	7	7	7	7	7	7	7	7
+Thruster 3 Application ID	2	2	2	2	2	2	2	2	2	2	2	2	2	2
+Thruster 3 Propeller	R	R	R	R	R	R	R	R	R	R	R	R	R	R
+Thruster 3 Reverse	D	D	D	D	D	D	D	D	D	D	D	D	D	D
+Thruster 3 Max Power	400	400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 3 Notes														
+														
+Thruster 4 Serial Number														
+Thruster 4 Location		Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port	Aft Port
+Thruster 4 Group ID		129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 4 Node ID		8	8	8	8	8	8	8	8	8	8	8	8	8
+Thruster 4 Application ID		3	3	3	3	3	3	3	3	3	3	3	3	3
+Thruster 4 Propeller		L	L	L	L	L	L	L	L	L	L	L	L	L
+Thruster 4 Reverse		E	E	E	E	E	E	E	E	E	E	E	E	E
+Thruster 4 Max Power		400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 4 Notes														
+														
+Thruster 5 Serial Number														
+Thruster 5 Location		 Vertical Forward Port	 Vertical Forward Port	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	 Vertical Forward Port	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical	Forward Vertical
+Thruster 5 Group ID		129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 5 Node ID		9	9	9	9	9	9	9	9	9	9	9	9	9
+Thruster 5 Application ID		6	6	4	4	4	4	4	6	4	4	4	4	4
+Thruster 5 Propeller		R	R	R	R	R	R	R	R	R	R	R	R	R
+Thruster 5 Reverse		E	D	D	D	D	D	D	E	D	D	D	D	D
+Thruster 5 Max Power		400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 5 Notes														
+														
+Thruster 6 Serial Number														
+Thruster 6 Location		Vertical Forward Starboard	Vertical Forward Starboard	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Vertical Forward Starboard	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical	Aft Vertical
+Thruster 6 Group ID		129	129	129	129	129	129	129	129	129	129	129	129	129
+Thruster 6 Node ID		10	10	10	10	10	10	10	10	10	10	10	10	10
+Thruster 6 Application ID		4	4	5	5	5	5	5	4	5	5	5	5	5
+Thruster 6 Propeller		L	L	L	L	L	L	L	L	L	L	L	L	L
+Thruster 6 Reverse		D	D	E	E	E	E	E	D	E	E	E	E	E
+Thruster 6 Max Power		400	400	400	400	400	400	400	400	400	400	400	400	400
+Thruster 6 Notes														
+														
+Thruster 7 Serial Number														
+Thruster 7 Location		Vertical Aft	Vertical Aft						Vertical Aft					
+Thruster 7 Group ID		129	129						129					
+Thruster 7 Node ID		20	20						20					
+Thruster 7 Application ID		5	5						5					
+Thruster 7 Propeller		L	L						L					
+Thruster 7 Reverse		E	E						E					
+Thruster 7 Max Power		400	400						400					
+Thruster 7 Notes														
+														
+Thruster 8 Serial Number														
+Thruster 8 Location														
+Thruster 8 Group ID														
+Thruster 8 Node ID														
+Thruster 8 Application ID														
+Thruster 8 Propeller														
+Thruster 8 Reverse														
+Thruster 8 Max Power														
+Thruster 8 Notes														
+														
+Thruster 9 Serial Number														
+Thruster 9 Location														
+Thruster 9 Group ID														
+Thruster 9 Node ID														
+Thruster 9 Application ID														
+Thruster 9 Propeller														
+Thruster 9 Reverse														
+Thruster 9 Max Power														
+Thruster 9 Notes														
+														
+Thruster 10 Serial Number														
+Thruster 10 Location														
+Thruster 10 Group ID														
+Thruster 10 Node ID														
+Thruster 10 Application ID														
+Thruster 10 Propeller														
+Thruster 10 Reverse														
+Thruster 10 Max Power														
+Thruster 10 Notes														
+														
+Thruster 11 Serial Number														
+Thruster 11 Location														
+Thruster 11 Group ID														
+Thruster 11 Node ID														
+Thruster 11 Application ID														
+Thruster 11 Propeller														
+Thruster 11 Reverse														
+Thruster 11 Max Power														
+Thruster 11 Notes														
+														
+Thruster 12 Serial Number														
+Thruster 12 Location														
+Thruster 12 Group ID														
+Thruster 12 Node ID														
+Thruster 12 Application ID														
+Thruster 12 Propeller														
+Thruster 12 Reverse														
+Thruster 12 Max Power														
+Thruster 12 Notes														
+														
+Camera 1 Type	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd	hd
+Camera 1 Serial Number														
+Camera 1 Location	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center	Forward Center
+Camera 1 Group ID	196	196	196	196	196	196	196	196	196	196	196	196	196	196
+Camera 1 Node ID	4	4	4	4	4	4	4	4	4	4	4	4	4	4
+Camera 1 TCP/IP	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11	192.168.1.11
+Camera 1 Notes														
+														
+Camera 2 Type								low_light	low_light					
+Camera 2 Serial Number														
+Camera 2 Location								Forward Bottom	Forward Bottom					
+Camera 2 Group ID								196	196					
+Camera 2 Node ID								12	12					
+Camera 2 TCP/IP								192.168.1.13	192.168.1.13					
+Camera 2 Notes														
+														
+Camera 3 Type														
+Camera 3 Serial Number														
+Camera 3 Location														
+Camera 3 Group ID														
+Camera 3 Node ID														
+Camera 3 TCP/IP														
+Camera 3 Notes														
+														
+Camera 4 Type														
+Camera 4 Serial Number														
+Camera 4 Location														
+Camera 4 Group ID														
+Camera 4 Node ID														
+Camera 4 TCP/IP														
+Camera 4 Notes														
+														
+Light 1 Type	Spot-Wide	Spot-Wide	Spot-Wide	alpha	alpha	alpha	alpha	alpha	Spot-Wide	alpha	alpha	alpha	alpha	alpha
+Light 1 Serial Number														
+Light 1 Location	Forward Top Port	Forward Top Port	Forward Top Port	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Top Port	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top	Forward Center Top
+Light 1 Group ID	131	131	131	131	131	131	131	131	131	131	131	131	131	131
+Light 1 Node ID	11	11	11	11	11	11	11	11	11	11	11	11	11	11
+Light 1 Application ID														
+Light 1 Notes														
+														
+Light 2 Type	Spot-Wide	Spot-Wide	Spot-Wide						Spot-Wide					
+Light 2 Serial Number														
+Light 2 Location	Forward Top Starboard	Forward Top Starboard	Forward Top Starboard						Forward Top Starboard					
+Light 2 Group ID	131	131	131						131					
+Light 2 Node ID	12	12	12						12					
+Light 2 Application ID														
+Light 2 Notes														
+														
+Light 3 Type														
+Light 3 Serial Number														
+Light 3 Location														
+Light 3 Group ID														
+Light 4 Node ID														
+Light 3 Application ID														
+Light 3 Notes														
+														
+Light 4 Type														
+Light 4 Serial Number														
+Light 4 Location														
+Light 4 Group ID														
+Light 4 Node ID														
+Light 4 Application ID														
+Lights 4 Notes														
+														
+Light 5 Type														
+Light 5 Serial Number														
+Light 5 Location														
+Light 5 Group ID														
+Light 5 Node ID														
+Light 5 Application ID														
+Light 5 Notes														
+														
+Light 6 Type														
+Light 6 Serial Number														
+Light 6 Location														
+Light 6 Group ID														
+Light 6 Node ID														
+Light 6 Application ID														
+Light 6 Notes														
+														
+Device 1 Type	AHRSD	AHRSD	AHRSD					High Definition Camera	High Definition Camera					
+Device 1 Serial Number														
+Device 1 Port	5	2	2											
+Device 1 TCP/IP Port														
+Device 1 RS-485														
+														
+Device 2 Type	High Definition Camera	High Definition Camera	High Definition Camera					Rotating Manipulator	Rotating Manipulator					
+Device 2 Serial Number														
+Device 2 Port	3	3	3											
+Device 2 TCP/IP Port														
+Device 2 RS-485														
+														
+Device 3 Type	Rotating Manipulator	Rotating Manipulator						AHRSD	AHRSD					
+Device 3 Serial Number														
+Device 3 Port	6	6												
+Device 3 TCP/IP Port														
+Device 3 RS-485														
+														
+Device 4 Type		GPS						Low Light Camera	Low Light Camera					
+Device 4 Serial Number														
+Device 4 Port		6												
+Device 4 TCP/IP Port														
+Device 4 RS-485														
+														
+Device 5 Type								Tritech Micron Scanning Sonar	Tritech Micron Scanning Sonar					
+Device 5 Serial Number														
+Device 5 Port														
+Device 5 TCP/IP Port														
+Device 5 RS-485														
+														
+Device 6 Type														
+Device 6 Serial Number														
+Device 6 Port														
+Device 6 TCP/IP Port														
+Device 6 RS-485														
+														
+Device 7 Type														
+Device 7 Serial Number														
+Device 7 Port														
+Device 7 TCP/IP Port														
+Device 7 RS-485														
+														
+Device 8 Type														
+Device 8 Serial Number														
+Device 8 Port														
+Device 8 TCP/IP Port														
+Device 8 RS-485														
+														
+Device 9 Type														
+Device 9 Serial Number														
+Device 9 Port														
+Device 9 TCP/IP Port														
+Device 9 RS-485														
+														
+Device 10 Type														
+Device 10 Serial Number														
+Device 10 Port														
+Device 10 TCP/IP Port														
+Device 10 RS-485														

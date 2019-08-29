@@ -1,0 +1,14 @@
+computer name
+account name (password)
+log in
+prompt account:device folder
+pwd
+ls
+cd
+~
+Home vs /home/videoray
+using the tab key
+commands
+vr_enum, vr_setid
+./vr_debug
+./vr_create &

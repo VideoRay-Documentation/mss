@@ -1,0 +1,85 @@
+<h1>LED Light Replacement</h1>
+
+<p>Replacing an LED Light requires both hardware replacement and software configuration procedures.  Each LED Light must be configured for its specific location on the vehicle.  Configuration parameters are identified in the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_light.html?arrangement=yellow#tagArrangement">LED Light</a> section of the Equipment Guide.</p>
+
+<h2>Hardware Replacement</h2>
+
+<p>To remove and replace an LED Light, follow these steps:</p>
+
+<ol>
+  <li>Power down the system.<p></p></li>
+  <li>Remove the top float block by removing the four screws holding the float block to the frame.<p></p></li>
+  <li>Note the position of the LED Light being replaced in the vehicle frame.  The position of the LED light being replaced will determine the configuration parameters to be programmed into the replacement.<p></p></li>
+  <li>For the LED Light to be replaced, follow the LED Light cable to the main thruster / Light connector stack (located under the main float block) and disconnect the damaged LED Light from the stack.<p></p></li>
+  <li>Carefully thread the disconnected cable and connector back through the frame until it is clear.<p></p></li>
+  <li>Using a Phillips head screw driver, remove the 4 screws that hold the LED module to the tilting / pivoting bracket.<p></p></li>
+  <li>Remove the damaged LED Light from the vehicle.<p></p></li>
+  <li>Note the serial number for the replacement LED Light.  This number will be used to identify and program the replacement LED Light once installed in the vehicle.<p></p></li>
+  <li>Mount the LED Light in the tilting / pivoting bracket and secure it using the Phillips head screws removed earlier.<p></p></li>
+  <li>Thread the cable and connector through the same routing as the old LED Light. Connect the cable to the same location in the connector stack as before.<p></p></li>
+  <li>Replace the float block using the screws removed earlier.<p></p></li>
+  </ol>
+
+<h2>LED Light and Control Software Configuration</h2>
+
+<p>Refer to the configuration parameter table in the LED Light section of the Equipment Guide.:</p>
+
+<p><img src="../../required/images/icon_note.png"> Commands below are case sensitive.</p>
+
+<ol>
+  <li>Connect and power up the system, but do not start the control software.<p></p></li>
+  <li>Launch the terminal program and use the following commands to program the LED Light.<p></p></li>
+  <li>Navigate to the working folder, type:
+    <ul>
+      <li><span class= "folder">cd flighthack</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+    <p></p></li>
+  <li>Enumerate the modules on the system, type:
+    <ul>
+      <li><span class= "folder">vr_enum</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+    <p></p></li>
+
+  <li>The replacement LED Light serial number should appear in the list of enumerated devices, such as LED000356 (LED will be present, but the number may be different) <p></p></li>
+
+  <li>Register the replacement LED Light, type:
+    <ul>
+      <li><span class= "folder">vr_setid <i>SN NodeID GroupID</i></span> followed by the <span class= "folder">Enter</span> key</span><p></p></li>
+      </ul>
+where <i>SN</i> is the serial number of the replacement LED Light (case sensitive value as found in the vr_enum output), and the <i>NodeID</i> and <i>GroupID</i> are from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_light.html?arrangement=yellow#tagArrangement">LED Light configuration table</a>  This step ensures that each LED Light has a unique Node ID on the this vehicle.<p></p></li>
+
+  <li>Type:
+    <ul>
+      <li><span class= "folder">vr_enum</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+again to verify the replacement LED Light is registered with its Node ID.<p></p></li>
+
+  <li>Enter diagnostic mode of the replacement LED Light, type: 
+    <ul>
+      <li><span class= "folder">./vr_debug_putty.py <i>NodeID</i></span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+
+where <i>[Node ID]</i> is the Node ID of the replacement LED Light.  This will open a new diagnostic window.<p></p></li>
+
+  <li>To access the configuration menu in the diagnostic window, type:
+    <ul>
+      <li><span class= "folder">c</span><p></p></li>
+      </ul>
+You do not need to type the <span class= "folder">Enter</span> key.  In configuration mode you are now able to define the LED Light's position on the vehicle (Application ID) and other operating parameters.<p></p></li>
+
+  <li>Using the values from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_light.html?arrangement=yellow#tagArrangement">LED Light configuration table</a> change the parameters on the LED Light to match those from the table.  Minimally, the following settings should be entered or confirmed:
+    <ol>
+      <li>Application ID (configuration parameter 21)<p></p></li>
+      </ol>
+To change the values, follow these steps:
+    <ol>
+      <li>Type the <span class= "folder"><i>Option Number</i></span> followed by <span class= "folder">Enter</span>, then type the <span class= "folder"><i>Desired Value</i></span> followed by <span class= "folder">Enter</span>.<p></p></li>
+      </ol>
+    <p></p></li>
+  <li>Press the <span class= "folder">s</span> key followed by <span class= "folder">Enter</span> to save the configuration.<p></p></li>
+  <li>Press the <span class= "folder">x</span> key followed by <span class= "folder">Enter</span> to exit the configuration menu.<p></p></li>
+  <li>Press the <span class= "folder">x</span> key again to exit diagnostic mode.  You do not need to press <span class= "folder">Enter</span>.<p></p></li>
+  <li>Close the diagnostic window.<p></p></li>
+  <li>Close the terminal window.<p></p></li>
+  </ol>
+

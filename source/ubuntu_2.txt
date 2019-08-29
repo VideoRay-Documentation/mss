@@ -1,0 +1,9 @@
+open doc
+navigate doc
+start program (make sure to use the correct icon)
+active programs
+alt tab
+file manager
+	gss_logs
+	Pictures
+copy files

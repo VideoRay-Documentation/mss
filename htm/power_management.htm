@@ -1,2 +1,23 @@
 <h1>Power Management</h1>
 
+<p>Power utilization in MSS systems is demand based.  If vertical thrusters demand more power for lifting operations, the system responds up to its capacity based on the topside power supply output from the User Control Console and the tether's capacity to deliver that power to the ROV.  This design feature allows VideoRay to maximize the performance of the vehicle for specific tasks.  This also means that the system can, at times, demand more power than can be delivered, which could result in a system brown out.  The system is protected, so a brown out is not harmful to the components, but it can cause the system to reset.</p>
+
+<p>Power utilization depends on several factors, including: rapid manual or autonomous control inputs, the intensity of the lights, the attached accessories power demand, the amount and type of tether being used, water currents, etc.</p>
+
+<p>There are two design options when dealing with this situation.  The first is to reduce the allowed power consumption of all of the components combined to never exceed the capacity of the topside and longest tether possible.  While this would prevent brown outs completely, the system could never take advantage of the fact that when lifting, horizontal thrust may not be required, or when working with short tethers, more power can be delivered to the ROV than when operating with longer tethers.  The second is to allow each component to demand as much power as it can up to its maximum design capability.  This can result in a total power demand that exceeds what is available, but maximizes selected performance when required.  VideoRay has chosen to implement this second option.</p>
+
+<h2>Power Management Implementation</h2>
+
+<p>VideoRay is working to improve the power management software of the system to automatically adjust the power utilization and prevent brown outs.</p>
+
+<p><!--$iconNote--> Until the automated power management tuning is implemented, users may need to adjust the power management settings manually to optimize the performance of the ROV for the equipment configuration and operating conditions.</p>
+
+<p>In the interim, the Greensea control software includes a manual power setting.  This setting can be found in the Power tab under the video display.  The default value is 65% as seen in the upper right of the image below.  You can change the power setting to increase the power utilization or reduce the incidence of brown out by sliding the slider.  To increase the power utilization, move the slider to the right towards 100.  To decrease the power utilization, move the slider to the left towards 0.00.</p>
+
+<p><img src="../../<!--$projDir-->images/power_management.png" width="600"></p>
+
+<p><!--$iconTip--> Depending on the operating conditions, increasing the power management setting may help provide more thrust.</p>
+
+<p><!--$iconNote--> Increasing the power management setting may result in experiencing more brown outs, and in some situations, the power management setting may need to be decreased from the default to prevent brown outs.</p>
+
+<p><!--$iconNote--> When fully automated power management is available, the need to use the manual slider will be reduced to special situations.</p>

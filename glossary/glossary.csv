@@ -1,1 +1,118 @@
-case_control|word|description|
+case_control|word|description|  //* forces case sensitive,  ~ separates variations of words ex: "video ~video,~video." will not match VideoRay
+|Accelerometer|A device used to measure acceleration - used to determine pitch and roll of the ROV|
+|Accessory|An optional device that can be used with the VideoRay system to augment its features and capabilities|
+|Accessory Port|ROV connection for ROV mounted accessories that provides access to power and data circuits|
+|Acoustic|Using sound as a method of communicating underwater - often used to measure distance|
+|Altitude|The height of the ROV off of the bottom|
+|Artificial Horizon|See Attitude Indicator|
+|Attitude Indicator|Instrument that provides an indication of the pitch and roll of the ROV|
+*|ATW|(Automatic White Balance) color corrects an image - See also White Balance|
+|Auto Altitude|Control Feature that maintains the altitude of the ROV at a constant value|
+|Auto Depth|Control Feature that maintains the depth of the ROV at a constant value|
+|Auto Heading|Control Feature that maintains the heading (compass direction) of the ROV at a constant value|
+|Auto Pitch|Control Feature that maintains the pitch of the ROV at a constant value|
+|Auto Roll|Control Feature that maintains the roll of the ROV at a constant value|
+|Ballast|Weights used to decrease buoyancy of the ROV to achieve desired buoyancy|
+|Buoyancy|The tendency to float, sink or remain at a constant depth|
+|Camera|The camera provides a video image from the ROV|
+|Camera Focus|Method to control image focus or the current state of image focus|
+|Camera Tilt|Method to control the vertical angle of the camera or the current state of camera tilt|
+|Celsius|Unit of measure of temperature|
+|Checklist|Method to ensure all operations are completed as planned or functions perform as expected|
+|Close|The Close button exits ROV Control Software|
+|Compass|Instrument that provides an indication of the heading of the ROV|
+|Compatibility|The state or being able to work together|
+|Computer|Primary topside component required to run the ROV control software|
+|User Control Console|The surface component that provides power and communications with the ROV|
+|Current|The flow of water or electricity|
+|Customization|The ability to change the operation or behavior of the system to make it more suitable for specific applications|
+|Cutter|An optional ROV mounted device for cutting objects|
+|Data Export|Allows data from the ROV to be exported to external applications|
+|Data Import|Allows data from external applications or sensors to be displayed on the video as overlay text|
+|Date|Calendar Date|
+|Depth|Vertical location of the ROV within the water measured from the surface|
+|Depth Control Knob|Method of controlling the depth of the ROV|
+|Depth Gauge|Display that indicates the current depth of the ROV|
+|Depth Rating|Maximum depth for operation of the ROV|
+|Diagnostics|Method for identifying the cause of a problem|
+|Edit|The process of modifying data|
+|Ethernet|Data Protocol and connector style|
+|Export|Method to communicate data from the ROV to other systems|
+|Factory Default|Initial state of a variety of parameters|
+|Fahrenheit|Unit of measure of temperature|
+|Fault|Indication of a problem|
+|Feet|Unit of measure of length or distance|
+|Firmware|Software that resides on the ROV modules|
+|Float Block|Required ROV component used to increase buoyancy of the ROV - counteracted by ballast to achieve desired buoyancy|
+|Gain|Setting to control the level of some parameter|
+|Generator|AC power source that typically runs on gasoline or diesel fuel|
+*|GFCI|(Ground Fault Circuit Interrupter) A safety circuit|
+*|GPS|(Geographic Positioning System) Device that provides location|
+|Hand Controller|Input device to control the ROV's operation|
+|Heading|The compass direction the ROV is facing|
+|Help|Information intended to provide assistance|
+|Humidity|Qualitative measure of the amount of moisture in the air|
+*|IEC|(International Electrotechnical Commission) Power cord connector standard|
+|Import|Method to receive and process data from other systems|
+|Instrument|User Control Software interface feature to display information or control features|
+|Inverter|AC power source that runs on battery|
+|Joystick|Input device for controlling the surge and yaw of the ROV|
+|Lens|Camera element used to capture and focus light to create an image|
+|Lights|ROV component that provides lights for scene illumination in dark areas|
+*|LIM|(Line Insulation Monitor) A safety circuit|
+|Main Dome|Protective covering over the camera|
+|Manipulator|An optional ROV mounted device for grabbing objects|
+|Meter|Unit of measure of length or distance|
+|Mission Planning|A method to prepare for a successful ROV operation|
+|Monitor|Device used for the display of the video or computer image|
+|My_Note|Feature of the documentation that allows users to add personal notes to the online pages|
+|Negative|A state of buoyancy in which the ROV will sink and a type of tether|
+|Neutral|A state of buoyancy in which the ROV will maintain it's vertical location and a type of tether|
+|O-Ring|Sealing device|
+|Opaque|Unable to see through|
+|Overlay|Text or logo superimposed on the video|
+|Pitch|The nose-up or nose-down attitude or motion of the ROV|
+|Positive|A state of buoyancy in which the ROV will float and a type of tether|
+|PPT|(Professional Performance Tether) A type of tether|
+|Pressure Sensor|A device to measure pressure - used to calculate ROV depth|
+|Propeller|ROV component with pitched blades that generate thrust when rotated|
+|Record|Command to initiate video capture to a storage media|
+|Remotely Operated Vehicle|The underwater vehicle|
+|RJ-45|A connector Style with 8 contacts commonly used for Ethernet connections|
+|Roll ~Roll,~Roll.|The left or right leaning attitude or motion of the ROV|
+*|ROV|See Remotely Operated Vehicle|
+|RS-485|Data Protocol|
+|Safety|State of, or application of, safe practices|
+|SDK|(Software Developer's Kit) A program and a set of software libraries and utilities to aid custom program development|
+|Sensitivity|The amount of output based on a specific level of input, particularly for the joystick|
+|Sensor|An instrument for measuring a specific property of an object or the environment|
+|Settings|The values of specific controls or parameters, or the ability to manage these|
+|Skid|The base of the ROV and often used to mount accessories|
+|Software Developer's Kit|See SDK|
+|Snapshot|A still image captured from the video image|
+|Strain Relief|An ROV and tether component that reduces the load on tether connections|
+|Sun Shade|Device used to shade the display for better visibility in direct sunlight|
+|Surge|The forward and backward motion of the ROV|
+|TDS|(Tether Deployment System) A reel for storing tether|
+|Temperature|Qualitative measure of hot or cold|
+|Tether|The cable that connects the ROV to the User Control Console|
+|Tether Deployment System|See TDS
+|Text Overlay|Ability to superimpose text over a video image|
+|Third Axis|Rotational motion of the joystick - can be used as an alternate control method of the joystick|
+|Thruster|ROV propulsion system including a motor and propeller|
+|Thruster Nozzle|Shroud around the propeller|
+|Tilt Arm|User Control Console component to adjust the angle of the optional second monitor|
+|Transparent|Ability to see through|
+|Turns Indicator|An instrument that keeps track of the number of rotations of the ROV about its vertical axis and provides information on which direction to turn to unwind the tether|
+|Umbilical|See also Tether|
+|Upgrade|A newer version or the process of installing a newer version|
+|USB|(Universal Serial Bus) Data protocol and connector style|
+|Video ~Video,~Video.|In VideoRay context, the image from the ROV's camera or the ability to record this image|
+|Video Encoder|Defines a method of storing a video image within a file format|
+|Video Window|Display component that displays the video image from the camera|
+|Virtual COM Port|A software feature that allows two applications on the same computer to communicate without requiring physical ports|
+|Visibility|Measure of the clarity of water|
+|Whip|A short length of tether attached to the ROV or User Control console|
+|White Balance|Camera feature to color correct images from the camera|
+|Yaw|The left or right turning attitude or motion of the ROV|
+|Zoom|Camera image magnification|

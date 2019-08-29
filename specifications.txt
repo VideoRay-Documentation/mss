@@ -1,0 +1,11 @@
+*,ROV System Specifications,,specs_rov_system.htm,,,
+*,ROV Modules Specifications,,specs_rov_modules.htm,,,
+**,Power Module,specs_power.html,m5_power/htm/specs_power.htm,,,
+**,Communications Module,specs_communications.html,m5_communications/htm/specs_communications.htm,,,
+**,AHRS Module,specs_ahrs.html,m5_ahrs/htm/specs_ahrs.htm,,,
+**,Thruster Module,specs_thruster.html,m5_thruster/htm/specs_thruster.htm,,,
+**,Camera Module,specs_camera_hd.html,m5_camera_hd/htm/specs_camera_hd.htm,,,
+**,LED Light Module,specs_led_light.html,m5_led_light/htm/specs_led_light.htm,,,
+*,ROV Accessories Specifications,,specs_rov_accessories.htm,,,
+!INCLUDE,@@options_specifications,2
+*,Tether Specifications,equip_tether_specs.html,pro_4/htm/equip_tether_specs.htm,,,

@@ -1,0 +1,32 @@
+<h1>Software Updates</h1>
+
+<p>Software updates can be downloaded from <A href="https://videoray.exavault.com/" target="blank">https://videoray.exavault.com/</a></p>
+
+<p><b>Username:</b>  quarterdeck<br />
+<b>Password:</b>  quarterdeck</p>
+
+<p><img src="../../required/images/icon_note.png"> In the instructions below, replace <span class="folder">&lt;&lt;name&gt;&gt;</span> with the appropriate name for .</p>
+<ol>
+  <li>Log in to the download site</li>
+  <li>Navigate to the EOD_WORKSPACE folder</li>
+  <li>Download the latest <span class="folder">&lt;&lt;name&gt;&gt;</span>.run to the Downloads folder</li>
+  <li>Open a Terminal Window and enter the following commands:
+    <ol type="a">
+      <li>rm gss_configs (<i>(If this reports an error, use: </i> rm -r gss_configs <i>)</i></li>
+      <li>rm -r gss_configs-<span class="folder">&lt;&lt;name&gt;&gt;</span> <i>(repeat for each desired config file)</i></li>
+      <li>cd Downloads</li>
+      <li>chmod +x <span class="folder">&lt;&lt;name&gt;&gt;</span>.run</li>
+      <li>sudo ./<span class="folder">&lt;&lt;name&gt;&gt;</span>.run oculus <i>(or use the desired sonar)</i></li>
+      <li>When prompted enter the password: videoray</li>
+     </ol>
+    </li>
+  <li>Start the workspace using the desktop icon</li>
+  <li>Exit the workspace</li>
+  <li>In the Terminal Window, enter the following commands
+    <ol type="a">
+      <li>cd .config/greensea_systems</li>
+      <li>rm <span class="folder">&lt;&lt;name&gt;&gt;</span>.ini</li> <i>(Do not delete any other files, specifically gss.key)</i>
+      </ol>
+    </li>
+  <li>Close the Terminal Windows</i>
+  </ol>

@@ -1,0 +1,13 @@
+VideoRay's MSS systems use Ubuntu as the operating system for the user control console.  Ubuntu is similar to Windows and most users will find it fairly easy to use.  This video will introduce you to using Ubuntu in general.  It is not comprehensive as we will only cover the features required to work with the MSS.
+
+When the computer starts, you will see a screen that looks similar to this.  You have the main header bar at the top, a tool bar on the left hand side for accessing various programs, and a desktop area with icons for the Defender and the Pro 5.
+
+Starting at the top, you have access to Windows-like control panel settings.  Most of these are preset so you won't need to change anything, but it's good to know they are here.  Also at the top, you have the date and time.  You might was to adjust your timezone settings to match your operating location.
+
+One other key area of the header is the network settings.  Here you want to make sure the MSS vehicle is showing as connected and the Wifi is NOT enabled.  I am currently running on a virtual machine, so this menu looks a little different that what you will see.  You should see MSS Vehicle and a section showing the state of Wifi, which again, should be disabled.  You can enable Wifi when not operating the MSS, but be sure to disable it before using the MSS again.
+
+On the left hand side, you can launch programs.  The ones you might use frequently are the file manager and web browser.  You can see these are similar to the Windows equivalents, but the window controls are on the left hand side.
+
+Another important tool is the terminal window.  This is similar to a DOS window, but it uses Ubuntu/Linux commands.
+
+We will cover launching the MSS and important terminal window commands in the next videos.

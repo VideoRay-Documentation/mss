@@ -6,6 +6,8 @@ yaw,Yaw Control
 depth,Depth Control
 pitch_up,Pitch Up
 pitch_down,Pitch Down
+pitch_reset,Pitch / Roll Reset
+autos_off,Autos Off
 lights_on,Lights On
 lights_off,Lights Off
 lights_intensity,Lights Intensity

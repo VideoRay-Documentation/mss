@@ -1,0 +1,76 @@
+<h1>Communications Module Replacement</h1>
+
+<p>Replacing a Communications Module requires hardware replacement.  Currently, the Communications Module will be pre-configured when delivered, so there is no need for software configuration procedures.
+
+<h2>Hardware Replacement</h2>
+
+<p>To remove and replace a Communications Module, follow these steps:</p>
+
+<ol>
+  <li>Power down the system.<p></p></li>
+  <li>Remove the top float block by removing the four screws holding the float block to the frame.<p></p></li>
+  <li>The DVL will need to be removed in order to remove the Communications Module.
+  <li>Remove the Communications Module male connector cable from the front of the Power Module.<p></p></li>
+  <li>For the Communications Module to be replaced, note the modules connected and order of the module cables connected to the top of the Communications Module, and remove these cables.<p></p></li>
+  <li>Using a Phillips head screw driver, remove the 4 screws that hold the Communications Module to the frame.<p></p></li>
+  <li>Remove the damaged Communications Module from the vehicle being careful to thread the remaining connected cables through the frame.  You may need to remove one or both of the Module cables.  If so, note the modules connected and locations where the cables are connected to the Communications Module<p></p></li>
+  <li>Thread the cable for the Power Module through the frame the way it was routed on the old Communications Module and connect it to the Power Module.<p></p></li>
+  <li>Mount the replacement Communications Module in the frame and secure it using the Phillips head screws removed earlier.  Do not over-tighten these screws.<p></p></li>
+  <li>Reinstall the module cables on the Communications Module using the same port locations as the cables were originally installed.<p></p></li>
+  <li>Replace the DVL.<p></p></li>
+  <li>Replace the float block using the screws removed earlier.<p></p></li>
+  </ol>
+
+<h2>Communications Module and Control Software Configuration</h2>
+
+<p>Refer to the configuration parameter table in the Communications Module section of the Equipment Guide.:</p>
+
+<p><img src="../../required/images/icon_note.png"> These steps are only required if a manipulator is being used on the vehicle.</p>
+
+<p><img src="../../required/images/icon_note.png"> Commands below are case sensitive.</p>
+
+<ol>
+  <li>Connect and power up the system, but do not start the control software.<p></p></li>
+  <li>Launch the terminal program and use the following commands to program the Communications Module.<p></p></li>
+  <li>Navigate to the working folder, type:
+    <ul>
+      <li><span class= "folder">cd flighthack</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+    <p></p></li>
+  <li>Enumerate the modules on the system, type:
+    <ul>
+      <li><span class= "folder">vr_enum</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+    <p></p></li>
+
+  <li>The replacement Communications Module serial number should appear in the list of enumerated devices, such as COMHB000356 (COMHB will be present, but the number may be different).<p></p></li>
+
+  <li>Enter diagnostic mode of the new Communications Module, type: 
+    <ul>
+      <li><span class= "folder">./vr_debug_putty.py 2</span> followed by the <span class= "folder">Enter</span> key<p></p></li>
+      </ul>
+
+where <i>2</i> is the default Node ID of the new Communications Module.  This will open a new diagnostic window.<p></p></li>
+
+  <li>To access the configuration menu in the diagnostic window, type:
+    <ul>
+      <li><span class= "folder">c</span><p></p></li>
+      </ul>
+You do not need to type the <span class= "folder">Enter</span> key.  In configuration mode you are now able to configure the baud rate for the rotating manipulator port.<p></p></li>
+
+  <li>Using the values from the <a href="../../<!--i-->$$htmlDir<!--/i-->mss_communication.html?arrangement=yellow#tagArrangement">Communications Module configuration table</a> change the parameters on the Communications Module to match the baud rate for the manipulator port from the table.<p></p>
+To change the baud rate value for the manipulator port, follow these steps:
+    <ol>
+      <li>Identify the port where the manipulator is connected and note the option number for the baud rate parameter.</li>
+      <li>Type the <span class= "folder"><i>Option Number</i></span> followed by <span class= "folder">Enter</span>, then type the <span class= "folder"><i>Desired Baud Rate Value (38400)</i></span> followed by <span class= "folder">Enter</span>.<p></p></li>
+      </ol>
+    <p></p></li>
+  <li>Press the <span class= "folder">s</span> key followed by <span class= "folder">Enter</span> to save the configuration.<p></p></li>
+  <li>Press the <span class= "folder">x</span> key followed by <span class= "folder">Enter</span> to exit the configuration menu.<p></p></li>
+  <li>Press the <span class= "folder">x</span> key again to exit diagnostic mode.  You do not need to press <span class= "folder">Enter</span>.<p></p></li>
+  <li>Close the diagnostic window.<p></p></li>
+  <li>Close the terminal window.<p></p></li>
+  </ol>
+
+
+
