@@ -369,41 +369,83 @@ v*****,Manipulator Rotate,controller_ergonomic_pro_5_manip_rotate.html,controlle
 
 ***,Optional Accessories,accessories_category1.html,common/htm/_accessories_cat.htm,,,,
 
-****,Cameras
-*****,Low Light
+****,By Function
 
-****,Sonars
-*****,Blueprint
+*****,Cameras
+******,VideoRay
+*******,Low Light
+
+*****,Sonars
+******,Blueprint
+*******,Oculus 750D
+*******,Oculus 1200D
+******,BlueView
+*******,M900
+******,Tritech
+*******,Gemini
+*******,Micron
+
+*****,Manipulators
+******,Blueprint Labs
+******,Inuktun
+
+*****,DVLs
+******,Nortek
+
+*****,GPS
+******,VideoRay
+*******,ROV GPS
+******,Lowrance
+******,USB 5 Hz
+
+*****,USBLs
+******,Blueprint Seatrac
+******,Tritech Micron Nav
+
+*****,Lasers
+******,VideoRay
+
+*****,UT Gauges
+******,Cygnus Mini ROV
+
+****,By Manufacturer
+
+*****,Blueprint Lab
+******,Rotating Manipulator
+
+*****,Blueprint Subsea
+*****,Sonars
 ******,Oculus 750D
 ******,Oculus 1200D
-*****,BlueView
+*****,USBL
+******,Blueprint Seatrac
+
+*****,Blueview
 ******,M900
-*****,Tritech
-******,Gemini
-******,Micron
 
-****,Manipulators
-*****,Blueprint Labs
-*****,Inuktun
-
-****,DVLs
-*****,Nortek 500
-
-****,GPS
-*****,VideoRay
-******,ROV GPS
-****,Hemisphere
-*****,USB 5 Hz
-
-****,USBLs
-*****,Blueprint Seatrac
-*****,Tritech Micron Nav
-
-****,Lasers
-*****, VideoRay
-
-****,UT Gauges
 *****,Cygnus
+******,Cygnus Mini ROV
+
+*****,Inuktun
+******,Rotating Manipulator
+
+*****,Lowrance
+******,GPS
+
+*****,Nortek
+******, DVL500
+
+*****,Titech
+******,Sonars
+*******,Gemini
+*******,Micron
+******,USBL
+*******,Micron Nav
+
+*****,VideoRay
+******,Lasers
+******,Low Light Camera
+******,ROV GPS
 
 ***,Mission Support Accessories,acc_mission.html,pro_4/htm/acc_mission.htm,,,,
 
