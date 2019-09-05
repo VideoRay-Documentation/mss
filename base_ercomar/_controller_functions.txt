@@ -1,0 +1,1 @@
+!INCLUDE,base_ercomar/_controller_industrial_functions.txt,1

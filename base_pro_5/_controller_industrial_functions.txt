@@ -1,0 +1,19 @@
+!VSUB,controllerName,industrial
+!VSUB,controllerFullName,VideoRay Industrial
+!VSUB,controllerMapping,_controller_industrial_mapping.htm
+!VSUBLIST,base_pro_5/controller_industrial.sub,controller_
+v*,VideoRay Industrial Controller,controller_industrial.html,controller.htm,../../mss/javascript/controller_industrial.js,,../../mss/images/controller_industrial.png
+**,Forward / Reverse Control,controller_industrial_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+**,Yaw Control,controller_industrial_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+**,Depth Control,controller_industrial_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+**,Lights Intensity,controller_industrial_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+**,Camera Tilt Up,controller_industrial_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+**,Camera Tilt Down,controller_industrial_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+**,Camera Focus In,controller_industrial_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+**,Camera Focus Out,controller_industrial_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+**,Snapshot,controller_industrial_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+**,Video Record,controller_industrial_record.html,controller_record.htm,,controller_record_sb.htm,,1
+**,Cycle Display Mode,controller_industrial_cycle_display.html,controller_cycle_display.htm,,controller_cycle_display_sb.htm,,1
+**,Manipulator Open,controller_industrial_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+**,Manipulator Close,controller_industrial_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+**,Manipulator Rotate,controller_industrial_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1

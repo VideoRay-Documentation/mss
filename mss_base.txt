@@ -9,6 +9,7 @@
 !VALID_TEXT,5
 !TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm
 !HTML_VERSION,$mss_html_version
+!TOCVIEW_IMAGES,OFF
 
 #Documentation Generation
 !INCLUDE,required/intro_qs_.txt,1

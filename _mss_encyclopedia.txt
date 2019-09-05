@@ -1,0 +1,820 @@
+# Start of Script => mss/mss_encyclopedia.txt
+#Document Commands
+!PRODUCT,Mission Specialist Series
+!VERSION,1.00.00
+!DOC_TYPE,<br />Encyclopedia
+!OUT_DIR,mss/
+!INCLUDED_PAGES,5,6
+!EXCLUDED_PAGES,
+!VALID_TEXT,5,6
+!TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm
+
+#Documentation Generation
+
+
+# Start of INCLUDE => required/intro_qs_.txt
+
+v*,Introduction,,index.htm,../../required/javascript/choose.js,required/htm/index_qs_sb.htm,
+
+
+# Start of INCLUDE => required/intro_base.txt
+
+%**,Copyright,copyright.html,required/htm/copyright.htm,,,
+v**,Language Support,,_intro_language.htm,,,../../required/images/globe2.png
+v**,Table of Contents,,_toc_view.htm,,,
+p%**,Table of Contents,,_toc_print.htm,,,
+v**,About this Document,intro_about.html,required/htm/intro_about.htm,../../required/javascript/intro_about.js,required/htm/intro_about_sb.htm,
+p%**,About this Document,intro_about.html,required/htm/intro_about.htm,,required/htm/intro_about_p_sb.htm,
+v***,Customize this Document,custom_my_notes.html,required/htm/custom_my_notes.htm,,,
+%**,How to Get Help,how_to_get_help.html,required/htm/how_to_get_help.htm,,,
+***,Before Contacting Support,before_contacting_support.html,required/htm/before_contacting_support.htm,,,,
+# End of INCLUDE required/intro_base.txt
+
+# End of INCLUDE required/intro_qs_.txt
+
+# Start of INCLUDE => required/overview_.txt
+
+
+# Start of INCLUDE => required/overview_base_1.txt
+
+%*,Product Overview,overview_.html,required/htm/overview_.htm,overview.js,required/htm/overview_sb.htm,../../required/images/overview.png
+
+
+# Start of INCLUDE => mss/overview_1.txt
+
+**,MSS Vehicle Configurations,,mss_vehicle_configurations.htm,,,,
+
+# End of INCLUDE mss/overview_1.txt
+
+# End of INCLUDE required/overview_base_1.txt
+
+# Start of INCLUDE => required/overview_base_2.txt
+
+v**,Glossary / Index,,_glossary_view.htm,,,../../required/images/glossary_view.png
+#p%**,Glossary,,_glossary_print.htm,,,../../required/images/glossary_print.png
+
+v**,Product FAQ,overview_faq.html,required/htm/overview_faq.htm,overview_faq.js,required/htm/overview_faq_sb.htm,../../required/images/overview_faq.png
+
+av**,Technical Information,,nul,,,
+av%***,Requirements,requirements.html,required/htm/requirements.htm,requirements.js,required/htm/requirements_sb.htm,../../required/images/requirements.png
+av***,Specifications,specifications.html,required/htm/specifications.htm,specifications.js,required/htm/specifications_sb.htm,../../required/images/specifications.png
+
+
+# Start of INCLUDE => mss/specifications.txt
+
+****,ROV System Specifications,,specs_rov_system.htm,,,
+****,ROV Modules Specifications,,specs_rov_modules.htm,,,
+*****,Power Module,specs_power.html,m5_power/htm/specs_power.htm,,,
+*****,Communications Module,specs_communications.html,m5_communications/htm/specs_communications.htm,,,
+*****,AHRS Module,specs_ahrs.html,m5_ahrs/htm/specs_ahrs.htm,,,
+*****,Thruster Module,specs_thruster.html,m5_thruster/htm/specs_thruster.htm,,,
+*****,Camera Module,specs_camera_hd.html,m5_camera_hd/htm/specs_camera_hd.htm,,,
+*****,LED Light Module,specs_led_light.html,m5_led_light/htm/specs_led_light.htm,,,
+****,ROV Accessories Specifications,,specs_rov_accessories.htm,,,
+****,Tether Specifications,equip_tether_specs.html,pro_4/htm/equip_tether_specs.htm,,,
+
+# End of INCLUDE mss/specifications.txt
+
+
+# End of INCLUDE required/overview_base_2.txt
+
+# End of INCLUDE required/overview_.txt
+# = = =
+*,Equipment Guide,,equip_.htm,,,,
+# = = =
+
+**,ROV Submersible,,equip_rov.htm,,,,
+
+***,ROV Nomenclature,,rov_nomenclature.htm,,,,
+
+***,Defender,,equip_defender.htm,,,,
+****,Frame,,frame_defender.htm,,,,
+****,Buoyancy,,buoyancy_defender.htm,,,,
+****,Ballast,,ballast_defender.htm,,,,
+****,Power Module,,mss_power.htm,,,,
+****,Communications Module,,mss_communications.htm,,,,
+****,AHRS Module,,mss_ahrs.htm,,,,
+****,Thruster Module,,mss_thruster.htm,,,,
+****,Camera Module,,mss_camera.htm,,,,
+****,Light Module,,mss_light.htm,,,,
+****,Connections,,mss_connections_defender.htm,,mss_connections_sb.htm,
+****,Accessory Configuration,,accessory_configuration_defender.htm,,,,
+
+***,Pro 5,,equip_pro_5.htm,,,,
+****,Frame,,frame_pro_5.htm,,,,
+****,Buoyancy,,buoyancy_pro_5.htm,,,,
+****,Ballast,,ballast_pro_5.htm,,,,
+****,Power / Communication Module,,mss_power_comms.htm,,,,
+****,AHRS Module,mss_ahrs_2.htm,mss_ahrs.htm,,,,
+****,Thruster Module,mss_thruster_2.htm,mss_thruster.htm,,,,
+****,Camera Module,mss_camera_2.htm,mss_camera.htm,,,,
+****,Light Module,mss_light_2.htm,mss_light.htm,,,,
+****,Connections,,mss_connections_pro_5.htm,,mss_connections_sb.htm,,,,
+****,Accessory Configuration,,accessory_configuration_pro_5.htm,,,,
+
+**,User Control Console,,user_control_console.htm,,,,
+
+***,IP65 Control Console,,user_control_console_ip65.htm,,,,
+****,Safety Circuits,,user_control_console_ip65_safety.htm,,,,
+****,Switches and Connections,,user_control_console_ip65_switches.htm,,,,
+****,Computer,,user_control_console_ip65_computer.htm,,,,
+****,HD Monitor,,user_control_console_hd_monitor.htm,,,,
+****,Tilt Arm,,tilt_arm.htm,,,,
+
+***,IP65 Control Console,,user_control_console_standard.htm,,,,
+****,Safety Circuits,,user_control_console_standard_safety.htm,,,,
+****,Switches and Connections,,user_control_console_standard_switches.htm,,,,
+****,Computer,,user_control_console_standard_computer.htm,,,,
+****,HD Monitor,user_control_console_hd_monitor_2.htm,user_control_console_hd_monitor.htm,,,,
+****,Tilt Arm,tilt_arm_2,tilt_arm.htm,,,,
+
+**,Hand Controller,,equip_controller.htm,,,,
+
+!VSUB,controllerName,ip65
+!VSUB,controllerFullName,VideoRay IP65
+!VSUB,controllerMapping,_controller_ip65_mapping.htm
+!VSUBLIST,base_defender/controller_ip65.sub,controller_
+
+***,IP65 Industrial Controller,controller_ip65.html,controller.htm,../../mss/javascript/controller_ip65.js,,../../mss/images/controller_ip65.png
+
+v****,Defender Mapping
+v*****,Forward / Reverse Control,controller_ip65_defender_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+v*****,Lateral Control,controller_ip65_defender_lateral.html,controller_lateral.htm,,controller_lateral_sb.htm,,1
+v*****,Yaw Control,controller_ip65_defender_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+v*****,Depth Control,controller_ip65_defender_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+v*****,Pitch Up,controller_ip65_defender_pitch_up.html,controller_pitch_up.htm,,controller_pitch_up_sb.htm,,1
+v*****,Pitch Down,controller_ip65_defender_pitch_down.html,controller_pitch_down.htm,,controller_pitch_down_sb.htm,,1
+v*****,Pitch / Roll Reset,controller_ip65_defender_pitch_reset.html,controller_pitch_reset.htm,,controller_pitch_reset_sb.htm,,1
+v*****,Autos Off,controller_ip65_defender_reserved.html,controller_reserved.htm,,controller_reserved_sb.htm,,1
+v*****,Lights Intensity,controller_ip65_defender_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+v*****,Camera Tilt Up,controller_ip65_defender_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+v*****,Camera Tilt Down,controller_ip65_defender_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+v*****,Camera Focus In,controller_ip65_defender_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+v*****,Camera Focus Out,controller_ip65_defender_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+v*****,Snapshot,controller_ip65_defender_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+v*****,Video Record,controller_ip65_defender_record.html,controller_record.htm,,controller_record_sb.htm,,1
+v*****,Manipulator Open,controller_ip65_defender_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+v*****,Manipulator Close,controller_ip65_defender_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+v*****,Manipulator Rotate,controller_ip65_defender_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1
+
+v****,Pro 5 Mapping
+v*****,Forward / Reverse Control,controller_ip65_pro_5_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+v*****,Lateral Control,controller_ip65_pro_5_lateral.html,controller_lateral.htm,,controller_lateral_sb.htm,,1
+v*****,Yaw Control,controller_ip65_pro_5_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+v*****,Depth Control,controller_ip65_pro_5_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+v*****,Sonar Range In,controller_ip65_pro_5_pitch_up.html,controller_pitch_up.htm,,controller_pitch_up_sb.htm,,1
+v*****,Sonar Range Out,controller_ip65_pro_5_pitch_down.html,controller_pitch_down.htm,,controller_pitch_down_sb.htm,,1
+v*****,Reserved,controller_ip65_pro_5_pitch_reset.html,controller_pitch_reset.htm,,controller_pitch_reset_sb.htm,,1
+v*****,Autos Off,controller_ip65_pro_5_reserved.html,controller_reserved.htm,,controller_reserved_sb.htm,,1
+v*****,Lights Intensity,controller_ip65_pro_5_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+v*****,Camera Tilt Up,controller_ip65_pro_5_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+v*****,Camera Tilt Down,controller_ip65_pro_5_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+v*****,Camera Focus In,controller_ip65_pro_5_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+v*****,Camera Focus Out,controller_ip65_pro_5_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+v*****,Snapshot,controller_ip65_pro_5_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+v*****,Video Record,controller_ip65_pro_5_record.html,controller_record.htm,,controller_record_sb.htm,,1
+v*****,Manipulator Open,controller_ip65_pro_5_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+v*****,Manipulator Close,controller_ip65_pro_5_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+v*****,Manipulator Rotate,controller_ip65_pro_5_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1
+
+***,Game Style Controller,controller_ergonomic.html,controller.htm,../../mss/javascript/controller_ergonomic.js,,../../mss/images/controller_ergonomic.png
+
+v****,Defender Mapping
+v*****,Forward / Reverse Control,controller_ergonomic_defender_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+v*****,Lateral Control,controller_ergonomic_defender_lateral.html,controller_lateral.htm,,controller_lateral_sb.htm,,1
+v*****,Yaw Control,controller_ergonomic_defender_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+v*****,Depth Control,controller_ergonomic_defender_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+v*****,Pitch Up,controller_ergonomic_defender_pitch_up.html,controller_pitch_up.htm,,controller_pitch_up_sb.htm,,1
+v*****,Pitch Down,controller_ergonomic_defender_pitch_down.html,controller_pitch_down.htm,,controller_pitch_down_sb.htm,,1
+v*****,Pitch / Roll Reset,controller_ergonomic_defender_pitch_reset.html,controller_pitch_reset.htm,,controller_pitch_reset_sb.htm,,1
+v*****,Autos Off,controller_ergonomic_defender_reserved.html,controller_reserved.htm,,controller_reserved_sb.htm,,1
+v*****,Lights Intensity,controller_ergonomic_defender_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+v*****,Camera Tilt Up,controller_ergonomic_defender_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+v*****,Camera Tilt Down,controller_ergonomic_defender_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+v*****,Camera Focus In,controller_ergonomic_defender_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+v*****,Camera Focus Out,controller_ergonomic_defender_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+v*****,Snapshot,controller_ergonomic_defender_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+v*****,Video Record,controller_ergonomic_defender_record.html,controller_record.htm,,controller_record_sb.htm,,1
+v*****,Manipulator Open,controller_ergonomic_defender_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+v*****,Manipulator Close,controller_ergonomic_defender_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+v*****,Manipulator Rotate,controller_ergonomic_defender_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1
+
+v****,Pro 5 Mapping
+v*****,Forward / Reverse Control,controller_ergonomic_pro_5_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+v*****,Lateral Control,controller_ergonomic_pro_5_lateral.html,controller_lateral.htm,,controller_lateral_sb.htm,,1
+v*****,Yaw Control,controller_ergonomic_pro_5_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+v*****,Depth Control,controller_ergonomic_pro_5_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+v*****,Sonar Range In,controller_ergonomic_pro_5_pitch_up.html,controller_pitch_up.htm,,controller_pitch_up_sb.htm,,1
+v*****,Sonar Range Out,controller_ergonomic_pro_5_pitch_down.html,controller_pitch_down.htm,,controller_pitch_down_sb.htm,,1
+v*****,Reserved,controller_ergonomic_pro_5_pitch_reset.html,controller_pitch_reset.htm,,controller_pitch_reset_sb.htm,,1
+v*****,Autos Off,controller_ergonomic_pro_5_reserved.html,controller_reserved.htm,,controller_reserved_sb.htm,,1
+v*****,Lights Intensity,controller_ergonomic_pro_5_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+v*****,Camera Tilt Up,controller_ergonomic_pro_5_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+v*****,Camera Tilt Down,controller_ergonomic_pro_5_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+v*****,Camera Focus In,controller_ergonomic_pro_5_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+v*****,Camera Focus Out,controller_ergonomic_pro_5_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+v*****,Snapshot,controller_ergonomic_pro_5_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+v*****,Video Record,controller_ergonomic_pro_5_record.html,controller_record.htm,,controller_record_sb.htm,,1
+v*****,Manipulator Open,controller_ergonomic_pro_5_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+v*****,Manipulator Close,controller_ergonomic_pro_5_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+v*****,Manipulator Rotate,controller_ergonomic_pro_5_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1
+
+**,Tether,equip_tether.html,pro_4/htm/equip_tether.htm,,,../../pro_4/images/tether.jpg
+***,Neutral Tether,,tether_neutral.htm,,,,
+***,Performance Tether,,tether_performance.htm,,,,
+***,Negative Tether,,tether_negative.htm,,,,
+***,Fiber Tether,,tether_fiber.htm,,,,
+***,Tether Strain Relief,,strain_relief.htm,,,,
+
+***,TDS,equip_tether_tds.html,equip_tether_tds.htm,,,../../mss/images/tds.jpg
+***,Winch Options,,winch.htm,,,,
+
+**,Included Accessories,acc_included.html,pro_4/htm/acc_included.htm,,,,
+
+**,Connections Summary,,equip_connections.htm,,,,
+***,Defender Connections,,connections_defender.htm,,,,
+***,Pro 5 Connections,,conections_pro_5.htm,,,,
+
+# = = =
+*,Software Guide,,software_.htm,,,,
+# = = =
+
+**,General Computer Operations,,general_computer_operations.htm,,,,
+
+**,EIVA Control Software,,eiva.htm,,,,
+
+**,Greensea Control Software,,gss.htm,,,,
+
+***,Starting Greensea,,gss_starting.htm,,,,
+***,Software Interface Overview,,gss_interface.htm,,,,
+****,Windows,,gss_windows.htm,,,,
+*****,F1 Combo,,gss_f1.htm,,,,
+*****,F2 Video,,gss_f2.htm,,,,
+*****,F3 Sonar,,gss_f3.htm,,,,
+*****,F4 Map,,gss_f4.htm,,,,
+*****,F5 Video and Sonar,,gss_f5.htm,,,,
+****,Heading,,gss_heading.htm,,,,
+****,Depth and Altitude,,gss_depth_altitude.htm,,,,
+****,Primary Controls,,gss_primary_controls.htm,,,,
+*****,Record,,gss_record.htm,,,,
+*****,Snapshot,,gss_snapshot.htm,,,,
+*****,Auto Heading,,gss_auto_heading.htm,,,,
+*****,Auto Depth,,gss_auto_depth.htm,,,,
+*****,Auto Altitude,,gss_auto_altitude.htm,,,,
+*****,Auto Pitch,,gss_auto_pitch.htm,,,,
+*****,Auto Roll,,gss_auto_roll.htm,,,,
+*****,Dynamic Positioning,,gss_dynamic_positioning.htm,,,,
+*****,Orbit,,gss_orbit.htm,,,,
+*****,Sonar Orbit,,gss_orbit_sonar.htm,,,,
+****,Map Window Controls,,gss_map_window_controls.htm,,,,
+*****,Missions,,gss_missions.htm,,,,
+******,Missions,,gss_missions_missions.htm,,,,
+******,Regions,,gss_missions_region.htm,,,,
+*****,Chart Items,,gss_chart_items.htm,,,,
+******,Markers,,gss_charts_markers.htm,,,,
+******,Man Overboard,,gss_charts_mob.htm,,,,
+*****,Logging,,gss_logging.htm,,,,
+*****,Map Config,,gss_map_config.htm,,,,
+******,Charts,,gss_map_charts.htm,,,,
+******,Misc.,,gss_map_misc.htm,,,,
+*****,Setup,,gss_setup.htm,,,,
+******,Position Declination,,gss_setup_position.htm,,,,
+******,Ship Config,,gss_setup_ship.htm,,,,
+******,Nav Items,,gss_setup_nav_items.htm,,,,
+****,Video / Sonar Controls,,gss_video_sonar_controls.htm,,,,
+*****,Autopilots,,gss_video_sonar_autopilots.htm,,,,
+*****,Cam,,gss_video_sonar_cam_.htm,,,,
+*****,LEDs,,gss_video_sonar_leds.htm,,,,
+*****,Sonar Control,,gss_video_sonar_sonar.htm,,,,
+*****,Tracking Control,,gss_video_sonar_tracking.htm,,,,
+*****,Power,,gss_video_sonar_power.htm,,,,
+****,Diagnostics Views,,gss_diagnostics_views.htm,,,,
+*****Vehicle Configuration,,gss_diagnostics_configuration.htm,,,,
+*****Vehicle Network,,gss_diagnostics_network_.htm,,,,
+*****Vehicle Sensors,,gss_diagnostics_sensors.htm,,,,
+*****Positioning,,gss_diagnostics_positioning.htm,,,,
+
+***,Software Operations,,software_operations.htm,,,,
+
+# Arely
+****,Vehicle Stabilization,,gss_stabilization.htm,,,,
+*****,Auto Heading,,gss_auto_heading_op.htm,,,,
+*****,Auto Depth,,gss_auto_depth_op.htm,,,,
+*****,Altitude,,gss_auto_altitude_op.htm,,,,
+*****,Auto Pitch,,gss_auto_pitch_op.htm,,,,
+*****,Auto Roll,,gss_auto_roll_op.htm,,,,
+*****,Exercises,,gss_stabilization_ex.htm,,,,
+
+# Tom
+****,Dynamic Positioning,,gss_dynamic_positioning_op.htm,,,,
+*****,Purpose,,gss_dynamic_positioning_purpose.htm,,,,
+*****,Manual Flight,,gss_manual_flight_op.htm,,,,
+*****,Jog Controls,,gss_jog_controls_op.htm,,,,
+*****,Exercises,,gss_dynamic_positioning_ex.htm,,,,
+
+# Tom
+****,Using Map Overlays,,gss_map_op.htm,,,,
+*****,Purpose,,gss_map_purpose.htm,,,,
+*****,Sources,,gss_map_sources_op.htm,,,,
+*****,Creation,,gss_map_reation_op.htm,,,,
+*****,Map Set Up,,gss_map_setup_op.htm,,,,
+******,Opacity,,gss_map_opacity_op.htm,,,,
+******,Layers,,gss_map_layers_op.htm,,,,
+*****,Exercises,,gss_map_ex.htm,,,,
+
+# Arely
+****,Vehicle Location,,gss_location_op.htm,,,,
+*****,Purpose,,gss_location_purpose.htm,,,,
+*****,Fuse,,gss_fuse_op.htm,,,,
+******,GPS,,gss_fuse_gps_op.htm,,,,
+******,USBL,,gss_fuse_usbl_op.htm,,,,
+*****,Declination,,gss_declination_op.htm,,,,
+*****,Set Position (map),,gss_set_position_map.htm,,,,
+*****,Set Position (sonar),,gss_set_position_sonar.htm,,,,
+*****,Exercises,,gss_location_ex.htm,,,,
+
+# Tom
+****,Missions,,gss_waypoint_op.htm,,,,
+*****,Purpose,,gss_waypoint_purpose.htm,,,,
+*****,Waypoint Defaults,,gss_waypoint_defaults_op.htm,,,,
+*****,Placing Waypoints,,gss_waypoint_placement_op.htm,,,,
+*****,Editing Waypoints,,gss_waypoint_edit_op.htm,,,,
+*****,Using Locks,,gss_waypoint_locks_op.htm,,,,
+******,Speed,,gss_waypoint_lock_speed_op.htm,,,,
+******,Heading,,gss_waypoint_lock_heading_op.htm,,,,
+******,Depth or Altitude,,gss_waypoint_lock_depth_op.htm,,,,
+*****,Execution,,gss_waypoint_execution_op.htm,,,,
+******,Altering Behavior,,gss_waypoint_coursemod_op.htm,,,,
+******,Jog Controls,,gss_waypoint_jog_op.htm,,,,
+*****,Exercises,,gss_waypoint_ex.htm,,,,
+
+# Arely
+****,Regions,,gss_region.htm,,,,
+*****,Purpose,,gss_region_purpose.htm,,,,
+*****,Placement,,gss_region_placement_op.htm,,,,
+*****,Setting Coverage,,gss_region_coverage_op.htm,,,,
+*****,Updating Coverage,,gss_region_coverage_update_op.htm,,,,
+*****,Exercises,,gss_region_ex.htm,,,,
+
+# Arely
+****,Orbit,,gss_orbit_op.htm,,,,
+*****,Purpose,,gss_orbit_purpose.htm,,,,
+*****,Placement,,gss_orbit_placement_op.htm,,,,
+*****,Operation,,gss_orbit_operation_op.htm,,,,
+*****,Exercises,,gss_orbit_ex.htm,,,,
+
+# Arely
+****,Sonar Orbit,,gss_orbit_sonar_op.htm,,,,
+*****,Purpose,,gss_orbit_sonar_purpose.htm,,,,
+*****,Placement,,gss_orbit_sonar_placement_op.htm,,,,
+*****,Operation,,gss_orbit_sonar_operation_op.htm,,,,
+*****,Exercises,,gss_orbit_sonar__ex.htm,,,,
+
+
+# Arely
+****,Chart Items,,gss_chart_op.htm,,,,
+*****,Purpose,,gss_chart_purpose_.htm,,,,
+*****,Markers,,gss_markers_op.htm,,,,
+*****,MOB (Man Overboard),,gss_mob_op.htm,,,,
+*****,Exercises,,gss_chart_ex.htm,,,,
+
+# Tom
+****,Operations Management,,gss_operations_management_op.htm,,,,
+*****,Purpose,,gss_operations_management_purpose.htm,,,,
+*****,Snapshot,,gss_operations_management_snapshot.htm,,,,
+*****,Recording,,gss_operations_management_recording.htm,,,,
+*****,Playback,,gss_operations_management_playback.htm,,,,
+*****,Data Administration,,gss_operations_management_data_admin.htm,,,,
+*****,Exercises,,gss_operations_management_ex.htm,,,,
+
+****,Software Management,,gss_software_management.htm,,,,
+*****,Software Installation,,gss_software_installation.htm,,,,
+*****,Software Updates,,gss_software_updates.htm,,,,
+*****,Folder Structure,,gss_folder_structure.htm,,,,
+
+**,Seebyte Control Software,,seabyte.htm,,,,
+
+**,Module Configuration,module_configuration.html,m5_base/htm/module_configuration.htm,,,,
+***,Configuration Commands,configuration_commands.html,m5_base/htm/configuration_commands.htm,,,,
+****,Command: vr_refresh,vr_refresh.html,m5_base/htm/vr_refresh.htm,,,,
+*****,Updating Firmware,updating_firmware.html,m5_base/htm/updating_firmware.htm,,,,
+****,Command: vr_enum,vr_enum.html,m5_base/htm/vr_enum.htm,,,,
+****,Command: vr_setid,vr_setid.html,m5_base/htm/vr_setid.htm,,,,
+****,Command: vr_debug_putty,vr_debug_putty.html,m5_base/htm/vr_debug_putty.htm,,,,
+****,Command: vr_create_virtport,vr_create_virtport.html,m5_base/htm/vr_create_virtport.htm,,,,
+
+
+# Start of INCLUDE => common/oper_.txt
+
+v*,Operations Guide,oper_.html,common/htm/oper_.htm,,,
+
+v**,Acceptable Use,oper_acceptable.html,common/htm/oper_acceptable.htm,,,
+av***,System Voltage Advisory,,system_voltage.htm,,,
+v***,Environmental Compatibility,environmental_compatibility.html,common/htm/environmental_compatibility.htm,,,
+
+**,Typical ROV Project
+***,Planning
+v****,Project Management,oper_pm.html,common/htm/oper_pm.htm,,,
+v****,Mission Planning,pm_planning.html,common/htm/pm_planning.htm,,common/htm/pm_planning_sb.htm,
+v****,General Logistics,pm_logistics.html,common/htm/pm_logistics.htm,,common/htm/ground_lift_sb.htm,
+***,Operations
+****,Site Selection
+v****,On-site Operations,pm_operations.html,common/htm/pm_operations.htm,,common/htm/pm_operations_sb.htm,
+v****,Video / Sensor Recording,video_record.html,common/htm/video_record.htm,,,
+****,Demobilization
+***,Analysis and Reporting
+v****,Project Completion,pm_completion.html,common/htm/pm_completion.htm,,,
+v****,Image and Video Production,completion_video.html,common/htm/completion_video.htm,,,
+v*****,Still Images,video_snapshot.html,common/htm/video_snapshot.htm,,,
+v*****,Video Editing,video_edit.html,common/htm/video_edit.htm,,,
+v*****,Video Production,video_produce.html,common/htm/video_produce.htm,,,
+*****,Sensor Data
+v****,Data Management,data_management.html,common/htm/data_management.htm,,,
+
+**,ROV Team Roles
+***,Supervisor
+****,Education & Skills Development
+***,Pilot
+****,Education & Skills Development
+***,Tether Handler
+****,Education & Skills Development
+***,Sensor Operator
+****,Education & Skills Development
+
+
+# Arely
+**,Predive Set Up
+***,Inspection
+***,Connections
+***,Power
+***,Functions
+***,Ballast
+***,Stabilize Vehicle
+***,Initialize Navigation
+
+v**,Emergency Situations,oper_emergency.html,common/htm/oper_emergency.htm,,,
+v***,Flooded ROV / Component,emergency_flood.html,common/htm/emergency_flood.htm,,,
+v***,Snagged Tether / ROV,emergency_snag.html,common/htm/emergency_snag.htm,,,
+v***,Cut Tether,emergency_cut.html,common/htm/emergency_cut.htm,,,
+v***,Loss of ROV Function(s),emergency_function.html,common/htm/emergency_function.htm,,,
+
+#v**,Standard Operating Procedures,,sop_.htm,,,
+#v***,Pro 4,nul,../../sop_pro_4/index.htm,,,
+
+v**,Universal Practices,oper_universal.html,common/htm/oper_universal.htm,,,
+v***,Deployment Platforms,universal_deployment.html,common/htm/universal_deployment.htm,,,
+v***,Tether Management,universal_tether.html,common/htm/universal_tether.htm,,,
+v***,Special Situations,universal_special.html,common/htm/universal_special.htm,,,
+v****,Cold Weather Operations,special_cold.html,common/htm/special_cold.htm,,,
+v****,Hot Weather Operations,special_hot.html,common/htm/special_hot.htm,,,
+v****,Potable Water,special_potable.html,common/htm/special_potable.htm,,,
+v****,Contaminated Water,special_contaminated.html,common/htm/special_contaminated.htm,,,
+
+v**,Piloting,oper_pilot.html,common/htm/oper_pilot.htm,,,
+v***,Piloting Tools,pilot_tools.html,common/htm/pilot_tools.htm,,,
+V****,Auto Modes
+v*****,Auto Heading,pilot_auto_heading.html,pro_4/htm/pilot_auto_heading.htm,,pro_4/htm/pilot_auto_heading_sb.htm,
+4v*****,Relative Heading,pilot_relative_heading.html,pro_4/htm/pilot_relative_heading.htm,,,
+v*****,Auto Depth,pilot_auto_depth.html,pro_4/htm/pilot_auto_depth.htm,,pro_4/htm/pilot_auto_depth_sb.htm,
+v*****,Auto Altitude,pilot_auto_altitude.html,pro_4/htm/pilot_auto_altitude.htm,,pro_4/htm/pilot_auto_altitude_sb.htm,
+5v*****,Auto Pitch,pilot_auto_pitch.html,mss/htm/pilot_auto_pitch.htm,,mss/htm/pilot_auto_pitch_sb.htm,
+5v*****,Auto Roll,pilot_auto_roll.html,mss/htm/pilot_auto_roll.htm,,mss/htm/pilot_auto_roll_sb.htm,
+5v****,Station Keeping
+5v****,Course Following
+5v*****,Incremental Motion
+5v*****,Go to...,go_to.html,mss/htm/go_to.htm,,,
+5v*****,Waypoint Route
+5v****,Power Management
+v***,Piloting Tactics,pilot_tactics.html,common/htm/pilot_tactics.htm,,,
+v****,Low Visibility,pilot_low_viz.html,common/htm/pilot_low_viz.htm,,,
+v****,Swift Current,pilot_current.html,common/htm/pilot_current.htm,,,
+v****,Deep Water,pilot_deep.html,common/htm/pilot_deep.htm,,,
+v****,Confined Spaces,pilot_confined.html,common/htm/pilot_confined.htm,,,
+#5v**,Navigation Workflows,navigation_Workflows.html,common/htm/navigation_workflows.htm,,,
+#5V***,GPS; DVL; USBL,,gps_dvl_usbl.htm,,,
+#5v***,Using Reference Markers,using_reference_markers.html,common/htm/using_reference_markers.htm,,,
+
+4v**,Using Network Remote,,oper_remote.htm,,,
+
+# End of INCLUDE common/oper_.txt
+
+# = = =
+*,Maintenance
+# = = =
+
+
+# Start of INCLUDE => mnt/mnt_n.txt
+
+
+0**,User Maintenance Policy,,mnt_policy.htm,,,
+9v**,User Maintenance Policy,,mnt_policy.htm,,,
+
+1**,User Maintenance Policy,nul,../../pro_4_mnt_n/html_ultra/mnt_policy.htm,,,
+4**,User Maintenance Policy,nul,../../pro_4_mnt_n/html/mnt_policy.htm,,,
+5**,User Maintenance Policy,mnt_policy.html,mnt/htm/mnt_policy.htm,,,
+
+
+# Start of INCLUDE => mnt/mnt_bp.txt
+
+0**,Maintenance Best Practices,,mnt_best_practice.htm,,,
+0***,Well Equipped Shop,,mnt_best_shop.htm,,,
+0***,Basic Equipment Care,,mnt_best_care.htm,,,
+0***,Special Handling,,mnt_best_handling.htm,,,
+0****,Connectors,mnt_handling_connectors.html,mnt/htm/mnt_handling_connectors.htm,,,
+0****,O-Rings,,mnt_handling_o-rings.htm,,,
+0****,Cartridge Seals,,mnt_handling_seals.htm,,,
+0*****,Example Cartridge Seals,,mnt_cartridge_seals.htm,,,
+0****,Electronics Components,,mnt_handling_electronics.htm,,,
+0***,Hull Materials,,mnt_handling_hull.htm,,,
+
+9v**,Maintenance Best Practices,,mnt_best_practice.htm,,,
+9v***,Well Equipped Shop,,mnt_best_shop.htm,,,
+9v***,Basic Equipment Care,,mnt_best_care.htm,,,
+9v***,Special Handling,,mnt_best_handling.htm,,,
+9v****,Connectors,mnt_handling_connectors.html,mnt/htm/mnt_handling_connectors.htm,,,
+9v****,O-Rings,,mnt_handling_o-rings.htm,,,
+9v****,Cartridge Seals,,mnt_handling_seals.htm,,,
+9v*****,Example Cartridge Seals,,mnt_cartridge_seals.htm,,,
+9v****,Electronics Components,,mnt_handling_electronics.htm,,,
+9v***,Hull Materials,,mnt_handling_hull.htm,,,
+
+1v**,Maintenance Best Practices,nul,../../pro_4_mnt_n/html_ultra/mnt_best_practice.htm,,,
+1v***,Well Equipped Shop,nul,../../pro_4_mnt_n/html_ultra/mnt_best_shop.htm,,,
+1v***,Basic Equipment Care,nul,../../pro_4_mnt_n/html_ultra/mnt_best_care.htm,,,
+1v***,Special Handling,nul,../../pro_4_mnt_n/html_ultra/mnt_best_handling.htm,,,
+1v****,Connectors,mnt_handling_connectors.html,mnt/htm/mnt_handling_connectors.htm,,,
+1v****,O-Rings,nul,../../pro_4_mnt_n/html_ultra/mnt_handling_o-rings.htm,,,
+1v****,Cartridge Seals,nul,../../pro_4_mnt_n/html_ultra/mnt_handling_seals.htm,,,
+1v*****,Example Cartridge Seals,nul,../../pro_4_mnt_n/html_ultra/mnt_cartridge_seals.htm,,,
+1v****,Electronics Components,nul,../../pro_4_mnt_n/html_ultra/mnt_handling_electronics.htm,,,
+1v****,Hull Materials,nul,../../pro_4_mnt_n/html_ultra/mnt_handling_hull.htm,,,
+
+4v**,Maintenance Best Practices,nul,../../pro_4_mnt_n/html/mnt_best_practice.htm,,,
+4v***,Well Equipped Shop,nul,../../pro_4_mnt_n/html/mnt_best_shop.htm,,,
+4v***,Basic Equipment Care,nul,../../pro_4_mnt_n/html/mnt_best_care.htm,,,
+4v***,Special Handling,nul,../../pro_4_mnt_n/html/mnt_best_handling.htm,,,
+4v****,Connectors,mnt_handling_connectors.html,mnt/htm/mnt_handling_connectors.htm,,,
+4v****,O-Rings,nul,../../pro_4_mnt_n/html/mnt_handling_o-rings.htm,,,
+4v****,Cartridge Seals,nul,../../pro_4_mnt_n/html/mnt_handling_seals.htm,,,
+4v*****,Example Cartridge Seals,nul,../../pro_4_mnt_n/html/mnt_cartridge_seals.htm,,,
+4v****,Electronics Components,nul,../../pro_4_mnt_n/html/mnt_handling_electronics.htm,,,
+4v****,Hull Materials,nul,../../pro_4_mnt_n/html/mnt_handling_hull.htm,,,
+
+5v**,Maintenance Best Practices,mnt_best_practice.html,mnt/htm/mnt_best_practice.htm,,,
+5v***,Well Equipped Shop,mnt_best_shop.html,mnt/htm/mnt_best_shop.htm,,,
+5v***,Basic Equipment Care,mnt_best_care.html,mnt/htm/mnt_best_care.htm,,,
+5v***,Special Handling,mnt_best_handling.html,mnt/htm/mnt_best_handling.htm,,,
+5v****,Connectors,mnt_handling_connectors.html,mnt/htm/mnt_handling_connectors.htm,,,
+5v****,O-Rings,mnt_handling_o-rings.html,mnt/htm/mnt_handling_o-rings.htm,,,
+5v****,Electronics Components,mnt_handling_electronics.html,mnt/htm/mnt_handling_electronics.htm,,,
+5v****,Hull Materials,mnt_handling_hull.html,mnt/htm/mnt_handling_hull.htm,,,
+
+# End of INCLUDE mnt/mnt_bp.txt
+
+# Start of INCLUDE => mnt/mnt_routine.txt
+
+0**,Periodic Maintenance,,mnt_periodic.htm,,,
+
+9v**,Periodic Maintenance,,mnt_periodic.htm,,,
+
+1v**,Periodic Maintenance,nul,../../pro_4_mnt_n/html_ultra/mnt_periodic.htm,,,
+
+4v**,Periodic Maintenance,nul,../../pro_4_mnt_n/html/mnt_periodic.htm,,,
+
+5v**,Periodic Maintenance,mnt_periodic.html,mnt/htm/mnt_periodic.htm,,,
+
+#**,Common Replacements,mnt_periodic.html,mnt/htm/mnt_periodic.htm,,,
+#***,Vertical Propeller,_GTO-006LS-KIT_title.html,mnt/htm/_GTO-006LS-KIT_title.htm,,,
+#***,Vertical Cartridge Seal,_CS-KIT-BL(v)_title.html,mnt/htm/_CS-KIT-BL(v)_title.htm,,,
+#****,Example Cartridge Seals,mnt_cartridge_seals.html,mnt/htm/mnt_cartridge_seals.htm,,,
+#***,Horizontal Propellers,_GTO-006L-KIT~GTO-006R-KIT_title.html,mnt/htm/_GTO-006L-KIT~GTO-006R-KIT_title.htm,,,
+#***,Horizontal Cartridge Seals,_CS-KIT-BL(h)_title.html,mnt/htm/_CS-KIT-BL(h)_title.htm,,,
+#****,Example Cartridge Seals,mnt_cartridge_seals1.html,mnt/htm/mnt_cartridge_seals.htm,,,
+
+
+# End of INCLUDE mnt/mnt_routine.txt
+
+# Start of INCLUDE => mnt/mnt_diagnostics.txt
+
+0**,Diagnostics,,mnt_diagnostics.htm,,,
+0***,Start Up,,mnt_diag_start_up.htm,,,
+0***,Power,,mnt_diag_power.htm,,,
+0***,Communications,,mnt_diag_comms.htm,,,
+0***,Control,,mnt_diag_control.htm,,,
+0***,Hand Controller,,mnt_diag_controller.htm,,,
+0***,Video,,mnt_diag_video.htm,,,
+
+9v**,Diagnostics,,mnt_diagnostics.htm,,,
+9v***,Start Up,,mnt_diag_start_up.htm,,,
+9v***,Power,,mnt_diag_power.htm,,,
+9v***,Communications,,mnt_diag_comms.htm,,,
+9v***,Control,,mnt_diag_control.htm,,,
+9v***,Hand Controller,,mnt_diag_controller.htm,,,
+9v***,Video,,mnt_diag_video.htm,,,
+
+1v**,Diagnostics,nul,../../pro_4_mnt_n/html_ultra/mnt_diagnostics.htm,,,
+1***,Start Up,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_start_up.htm,,,
+1v***,Power,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_power.htm,,,
+1v***,Communications,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_comms.htm,,,
+1v***,Control,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_control.htm,,,
+1v***,Hand Controller,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_controller.htm,,,
+1v***,Video,nul,../../pro_4_mnt_n/html_ultra/mnt_diag_video.htm,,,
+
+4v**,Diagnostics,nul,../../pro_4_mnt_n/html/mnt_diagnostics.htm,,,
+4v***,Start Up,nul,../../pro_4_mnt_n/html/mnt_diag_start_up.htm,,,
+4v***,Power,nul,../../pro_4_mnt_n/html/mnt_diag_power.htm,,,
+4v***,Communications,nul,../../pro_4_mnt_n/html/mnt_diag_comms.htm,,,
+4v***,Control,nul,../../pro_4_mnt_n/html/mnt_diag_control.htm,,,
+4v***,Hand Controller,nul,../../pro_4_mnt_n/html/mnt_diag_controller.htm,,,
+4v***,Video,nul,../../pro_4_mnt_n/html/mnt_diag_video.htm,,,
+
+5v**,Diagnostics,mnt_diagnostics.html,mnt/htm/mnt_diagnostics.htm,,,
+#5v***,Start Up,mns_diag_start_up.html,mnt/htm/mnt_diag_start_up.htm,,,
+#5v***,Power,mnt_diag_power.html,mnt/htm/mnt_diag_power.htm,,,
+#5v***,Communications,mnt_diag_comms.html,mnt/htm/mnt_diag_comms.htm,,,
+#5v***,Control,mnt_diag_control.html,mnt/htm/mnt_diag_control.htm,,,
+#5v***,Hand Controller,mnt_diag_controller.html,mnt/htm/mnt_diag_controller.htm,,,
+#5v***,Video,mnt_diag_video.html,mnt/htm/mnt_diag_video.htm,,,
+
+# End of INCLUDE mnt/mnt_diagnostics.txt
+
+# End of INCLUDE mnt/mnt_n.txt
+
+#**,Diagnostics
+#***,Vehicle Configuration
+#***,Vehicle Network
+#***,Sensors
+#***,Positioning
+
+**,Module Replacement,,module_configuration_replacement.htm,,,,
+***,Power Module,,replacement_power.htm,,,,
+***,Communications Module,,replacement_communications.htm,,,,
+***,AHRS Module,,replacement_ahrs.htm,,,,
+***,Thruster Module,,replacement_thruster.htm,,,,
+***,Camera Module,,replacement_camera.htm,,,,
+***,LED Light Module,,replacement_led_light.htm,,,,
+
+# = = =
+*,Appendices
+# = = =
+
+# = = =
+**,Accessories
+# = = =
+
+***,Optional Accessories,accessories_category1.html,common/htm/_accessories_cat.htm,,,,
+
+****,By Function
+
+*****,Cameras
+******,VideoRay
+*******,Low Light
+
+*****,Sonars
+******,Blueprint
+*******,Oculus 750D
+*******,Oculus 1200D
+******,BlueView
+*******,M900
+******,Tritech
+*******,Gemini
+*******,Micron
+
+*****,Manipulators
+******,Blueprint Labs
+******,Inuktun
+
+*****,DVLs
+******,Nortek
+
+*****,GPS
+******,VideoRay
+*******,ROV GPS
+******,Lowrance
+******,USB 5 Hz
+
+*****,USBLs
+******,Blueprint Seatrac
+******,Tritech Micron Nav
+
+*****,Lasers
+******,VideoRay
+
+*****,UT Gauges
+******,Cygnus Mini ROV
+
+****,By Manufacturer
+
+*****,Blueprint Lab
+******,Rotating Manipulator
+
+*****,Blueprint Subsea
+*****,Sonars
+******,Oculus 750D
+******,Oculus 1200D
+*****,USBL
+******,Blueprint Seatrac
+
+*****,Blueview
+******,M900
+
+*****,Cygnus
+******,Cygnus Mini ROV
+
+*****,Inuktun
+******,Rotating Manipulator
+
+*****,Lowrance
+******,GPS
+
+*****,Nortek
+******, DVL500
+
+*****,Titech
+******,Sonars
+*******,Gemini
+*******,Micron
+******,USBL
+*******,Micron Nav
+
+*****,VideoRay
+******,Lasers
+******,Low Light Camera
+******,ROV GPS
+
+***,Mission Support Accessories,acc_mission.html,pro_4/htm/acc_mission.htm,,,,
+
+***,Accessory Compatibility
+
+# = = =
+**,Additional Guides
+# = = =
+
+***,Defender
+****,Quick Start
+****,Operator's Manual
+***,Pro 5
+****,Quick Start
+****,Operator's Manual
+
+# = = =
+***,Task Based SOPs,,tasked_based_sops.htm,,,,Tasked Based Standard Operating Procedures
+# = = =
+
+****,EIVA (TBA)
+
+****,Greensea
+*****,Pier Search,NUL[%],../../sop_pier,,,,
+*****,Ship hull Search,NUL[%],../../sop_ship_hull,,,,
+*****,Transect,NUL[%],../../sop_transect,,,,
+*****,Wide Area Search,NUL[%],../../sop_was,,,,
+
+****,Seebyte (TBA)
+
+# = = =
+***,M5 Module Guides,,module_guides.htm,,,,
+# = = =
+
+****,M5 AHRS Module,nul[%],../../m5_ahrs/index.htm,,,,
+****,m5 Camera Module,nul[%],../../m5_camera/index.htm,,,,
+****,M5 Communications Module,nul[%],../../m5_communications/index.htm,,,,
+****,M5 LED Light Module,nul[%],../../m5_led_light/index.htm,,,,
+****,M5 Power Module,nul[%],../../m5_power/index.htm,,,,
+****,M5 Thruster Module,nul[%],../../m5_thruster/index.htm,,,,
+
+***,Integration Guide
+
+**,Highlights Lists
+***,Danger
+***,Caution
+***,Note
+***,Tip
+
+**,Documentation Archives
+
+
+# Start of INCLUDE => common/regional.txt
+
+**,Region Specific Information,region.html,common/htm/region_specific.htm,,,
+***,European Union (EU),eu.html,common/htm/eu.htm,,,
+****,WEEE 2013 Compliance,weee_2013.html,common/htm/weee_2013.htm,,,
+
+# End of INCLUDE common/regional.txt
+
+# End of Script mss/mss_encyclopedia.txt
+
+# Start of Script Suffix required/script_suffix.txt
+
+#standard links template
+^,VideoRay,links_videoray.html,required/htm/links_videoray.htm,../../required/javascript/links_videoray.js,required/htm/links_sb.htm,
+^,Library,links_library.html,required/htm/links_library.htm,../../required/javascript/links_library.js,required/htm/links_sb.htm,
+^,Downloads,links_downloads.html,required/htm/links_downloads.htm,../../required/javascript/links_downloads.js,required/htm/links_sb.htm,
+^,Training,links_training.html,required/htm/links_training.htm,../../required/javascript/links_training.js,required/htm/links_sb.htm,
+^,Support,links_support.html,required/htm/links_support.htm,../../required/javascript/links_support.js,required/htm/links_sb.htm,
+^,Community,links_community.html,required/htm/links_community.htm,../../required/javascript/links_community.js,required/htm/links_sb.htm,
+^,ROV FAQ,links_rovfaq.html,required/htm/links_rovfaq.htm,../../required/javascript/links_rovfaq.js,required/htm/links_sb.htm,
+^,ROV Blog,links_rovblog.html,required/htm/links_rovblog.htm,../../required/javascript/links_rovblog.js,required/htm/links_sb.htm,
+^,Gallery,links_gallery.html,required/htm/links_gallery.htm,../../required/javascript/links_gallery.js,required/htm/links_sb.htm,
+
+
+# End of Script Suffix required/script_suffix.txt

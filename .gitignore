@@ -1,10 +1,10 @@
 index.html
-_*
-htm/_*
 htm/temp/
 My_Notes/
 html*/
-pdf/
-source/not_tracked/
-zip/mss.zip
 old*/
+source/not_tracked/
+pdf/eod*
+pdf/videoray_doc*
+zip/mss.zip
+

@@ -1,0 +1,2 @@
+!INCLUDE,base_defender/_controller_industrial_functions.txt,1
+!INCLUDE,base_defender/_controller_ip65_functions.txt,1

@@ -1,0 +1,2 @@
+!INCLUDE,base_pro_5/_controller_industrial_functions.txt,1
+!INCLUDE,base_pro_5/_controller_ip65_functions.txt,1

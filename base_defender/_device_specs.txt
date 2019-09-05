@@ -1,0 +1,4 @@
+*,Sonar Specifications,,specs_sonar_oculus.htm,,,
+*,Manipulator Specifications,,specs_manipulator_rotating.htm,,,
+*,ROV GPS Specifications ,,specs_rov_gps.htm,,,
+*,DVL Specifications,,specs_dvl_nortek.htm,,,

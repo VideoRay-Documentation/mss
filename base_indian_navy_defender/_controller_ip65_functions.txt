@@ -1,0 +1,23 @@
+!VSUB,controllerName,ip65
+!VSUB,controllerFullName,VideoRay IP65
+!VSUB,controllerMapping,_controller_ip65_mapping.htm
+!VSUBLIST,base_indian_navy_defender/controller_ip65.sub,controller_
+v*,VideoRay IP65 Controller,controller_ip65.html,controller.htm,../../mss/javascript/controller_ip65.js,,../../mss/images/controller_ip65.png
+**,Forward / Reverse Control,controller_ip65_forward.html,controller_forward.htm,,controller_forward_sb.htm,,1
+**,Lateral Control,controller_ip65_lateral.html,controller_lateral.htm,,controller_lateral_sb.htm,,1
+**,Yaw Control,controller_ip65_yaw.html,controller_yaw.htm,,controller_yaw_sb.htm,,1
+**,Depth Control,controller_ip65_depth.html,controller_depth.htm,,controller_depth_sb.htm,,1
+**,Pitch Up,controller_ip65_pitch_up.html,controller_pitch_up.htm,,controller_pitch_up_sb.htm,,1
+**,Pitch Down,controller_ip65_pitch_down.html,controller_pitch_down.htm,,controller_pitch_down_sb.htm,,1
+**,Pitch / Roll Reset,controller_ip65_pitch_reset.html,controller_pitch_reset.htm,,controller_pitch_reset_sb.htm,,1
+**,Lights Intensity,controller_ip65_lights_intensity.html,controller_lights_intensity.htm,,controller_lights_intensity_sb.htm,,1
+**,Camera Tilt Up,controller_ip65_tilt_up.html,controller_tilt_up.htm,,controller_tilt_up_sb.htm,,1
+**,Camera Tilt Down,controller_ip65_tilt_down.html,controller_tilt_down.htm,,controller_tilt_down_sb.htm,,1
+**,Camera Focus In,controller_ip65_focus_in.html,controller_focus_in.htm,,controller_focus_in_sb.htm,,1
+**,Camera Focus Out,controller_ip65_focus_out.html,controller_focus_out.htm,,controller_focus_out_sb.htm,,1
+**,Snapshot,controller_ip65_snapshot.html,controller_snapshot.htm,,controller_snapshot_sb.htm,,1
+**,Video Record,controller_ip65_record.html,controller_record.htm,,controller_record_sb.htm,,1
+**,Cycle Display Mode,controller_ip65_cycle_display.html,controller_cycle_display.htm,,controller_cycle_display_sb.htm,,1
+**,Manipulator Open,controller_ip65_manip_open.html,controller_manip_open.htm,,controller_manip_open_sb.htm,,1
+**,Manipulator Close,controller_ip65_manip_close.html,controller_manip_close.htm,,controller_manip_close_sb.htm,,1
+**,Manipulator Rotate,controller_ip65_manip_rotate.html,controller_manip_rotate.htm,,controller_manip_rotate_sb.htm,,1

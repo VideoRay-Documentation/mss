@@ -1,0 +1,24 @@
+#*,Sonar,,sonar_oculus.htm,,,
+#*,Rotating Manipulator,,manipulator_rotating.htm,,,
+#*,ROV GPS,,rov_gps.htm,,,
+#*,DVL,,dvl.htm,,,
+
+*,Sonar
+**,Blueprint
+***,Oculus 750D
+
+*,Manipulator
+**,Inuktun
+
+*,DVL
+**,Nortek
+
+*,GPS
+**,VideoRay
+***,ROV GPS
+**,Lowrance
+**,USB 5 Hz
+
+*,USBL
+**,Blueprint Seatrac
+
